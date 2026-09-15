@@ -1,0 +1,39 @@
+services:
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: mon_projet_db
+      MYSQL_USER: mon_utilisateur
+      MYSQL_PASSWORD: mon_mot_de_passe
+    ports:
+      # Host port 3307 because a local MySQL may already use 3306 on Windows.
+      # Inside Docker, the API still reaches MySQL on db:3306.
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      # 127.0.0.1 forces TCP, so the check only passes once MySQL is really ready
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-u", "root", "-prootpassword"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  api:
+    build: ./back
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./back:/var/www
+    depends_on:
+      db:
+        condition: service_healthy
+    # Install PHP dependencies, create .env on first start if missing, then serve the API
+    command: >
+      sh -c "composer install --no-interaction &&
+             ([ -f .env ] || (cp .env.example .env && php artisan key:generate)) &&
+             php artisan serve --host=0.0.0.0 --port=8000"
+
+volumes:
+  mysql_data:

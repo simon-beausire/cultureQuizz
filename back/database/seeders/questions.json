@@ -1,0 +1,269 @@
+{
+  "categories": [
+    {
+      "categorie": "Histoire",
+      "questions": [
+        {
+          "question": "En quelle année a eu lieu la prise de la Bastille ?",
+          "reponses": ["1789", "1792", "1776", "1815", "1799", "1804", "1830", "1848", "1774", "1793"]
+        },
+        {
+          "question": "Qui a été le premier empereur des Français ?",
+          "reponses": ["Napoléon Ier", "Louis XVI", "Charlemagne", "Napoléon III", "Louis XIV", "Charles de Gaulle", "Henri IV", "François Ier", "Louis-Philippe", "Jules César"]
+        },
+        {
+          "question": "En quelle année a commencé la Première Guerre mondiale ?",
+          "reponses": ["1914", "1918", "1939", "1905", "1912", "1916", "1870", "1920", "1911", "1945"]
+        },
+        {
+          "question": "Quelle civilisation a construit le Machu Picchu ?",
+          "reponses": ["Les Incas", "Les Aztèques", "Les Mayas", "Les Olmèques", "Les Toltèques", "Les Égyptiens", "Les Romains", "Les Khmers", "Les Zapotèques", "Les Mochicas"]
+        },
+        {
+          "question": "Qui a été la première femme à recevoir un prix Nobel ?",
+          "reponses": ["Marie Curie", "Rosalind Franklin", "Ada Lovelace", "Simone Veil", "Florence Nightingale", "Lise Meitner", "George Sand", "Louise Michel", "Olympe de Gouges", "Hypatie"]
+        },
+        {
+          "question": "En quelle année l'homme a-t-il marché sur la Lune pour la première fois ?",
+          "reponses": ["1969", "1965", "1972", "1957", "1961", "1975", "1967", "1981", "1959", "1971"]
+        },
+        {
+          "question": "Quel mur est tombé en 1989 ?",
+          "reponses": ["Le mur de Berlin", "Le mur d'Hadrien", "Le mur des Lamentations", "La ligne Maginot", "Le mur de Varsovie", "Le mur de Belfast", "Le mur de Vienne", "Le mur de Prague", "Le mur de Moscou", "Le mur de Budapest"]
+        },
+        {
+          "question": "Quel pharaon est célèbre pour son tombeau découvert presque intact en 1922 ?",
+          "reponses": ["Toutânkhamon", "Ramsès II", "Khéops", "Akhenaton", "Séthi Ier", "Khéphren", "Amenhotep III", "Thoutmôsis III", "Mykérinos", "Hatchepsout"]
+        },
+        {
+          "question": "Quel navigateur a atteint l'Amérique en 1492 ?",
+          "reponses": ["Christophe Colomb", "Vasco de Gama", "Fernand de Magellan", "Amerigo Vespucci", "Jacques Cartier", "Marco Polo", "James Cook", "Hernán Cortés", "Francisco Pizarro", "Bartolomeu Dias"]
+        },
+        {
+          "question": "En quelle année les Françaises ont-elles voté pour la première fois ?",
+          "reponses": ["1945", "1936", "1918", "1958", "1968", "1901", "1920", "1950", "1929", "1848"]
+        },
+        {
+          "question": "Quelle ville était la capitale de l'Empire byzantin ?",
+          "reponses": ["Constantinople", "Rome", "Athènes", "Alexandrie", "Antioche", "Jérusalem", "Venise", "Carthage", "Damas", "Babylone"]
+        },
+        {
+          "question": "Quel roi de France était surnommé le Roi-Soleil ?",
+          "reponses": ["Louis XIV", "Louis XIII", "Louis XV", "Louis XVI", "Henri IV", "François Ier", "Charles VII", "Philippe le Bel", "Louis IX", "Charles X"]
+        }
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "questions": [
+        {
+          "question": "Quelle est la capitale de l'Australie ?",
+          "reponses": ["Canberra", "Sydney", "Melbourne", "Brisbane", "Perth", "Adélaïde", "Darwin", "Hobart", "Auckland", "Wellington"]
+        },
+        {
+          "question": "Quel est le plus long fleuve de France ?",
+          "reponses": ["La Loire", "La Seine", "Le Rhône", "La Garonne", "La Dordogne", "La Somme", "La Charente", "L'Adour", "La Vilaine", "L'Escaut"]
+        },
+        {
+          "question": "Quel est le plus grand océan du monde ?",
+          "reponses": ["L'océan Pacifique", "L'océan Atlantique", "L'océan Indien", "L'océan Arctique", "L'océan Austral", "La mer Méditerranée", "La mer des Caraïbes", "La mer de Chine méridionale", "La mer d'Arabie", "La mer de Béring"]
+        },
+        {
+          "question": "Quel est le plus haut sommet du monde ?",
+          "reponses": ["L'Everest", "Le K2", "Le Kangchenjunga", "Le mont Blanc", "Le Kilimandjaro", "L'Aconcagua", "Le Denali", "Le mont Elbrouz", "Le Lhotse", "Le Makalu"]
+        },
+        {
+          "question": "Dans quel pays se trouve la ville de Marrakech ?",
+          "reponses": ["Le Maroc", "L'Algérie", "La Tunisie", "L'Égypte", "La Libye", "La Mauritanie", "Le Sénégal", "Le Mali", "La Jordanie", "Le Liban"]
+        },
+        {
+          "question": "Quelle est la capitale du Canada ?",
+          "reponses": ["Ottawa", "Toronto", "Montréal", "Vancouver", "Québec", "Calgary", "Edmonton", "Winnipeg", "Halifax", "Victoria"]
+        },
+        {
+          "question": "Quel est le plus grand désert chaud du monde ?",
+          "reponses": ["Le Sahara", "Le désert de Gobi", "Le Kalahari", "Le désert d'Atacama", "Le Namib", "Le désert de Mojave", "Le désert d'Arabie", "Le désert de Sonora", "Le désert du Thar", "Le Grand Désert de Victoria"]
+        },
+        {
+          "question": "Combien d'États membres compte l'Union européenne depuis le Brexit ?",
+          "reponses": ["27", "28", "25", "26", "30", "24", "29", "15", "32", "20"]
+        },
+        {
+          "question": "Quel est le plus grand pays du monde par sa superficie ?",
+          "reponses": ["La Russie", "Le Canada", "La Chine", "Les États-Unis", "Le Brésil", "L'Australie", "L'Inde", "L'Argentine", "Le Kazakhstan", "L'Algérie"]
+        },
+        {
+          "question": "Quelle mer borde la ville de Marseille ?",
+          "reponses": ["La mer Méditerranée", "La Manche", "La mer du Nord", "L'océan Atlantique", "La mer Baltique", "La mer Noire", "La mer Rouge", "La mer Adriatique", "La mer Égée", "La mer Tyrrhénienne"]
+        },
+        {
+          "question": "Quelle est la capitale du Japon ?",
+          "reponses": ["Tokyo", "Kyoto", "Osaka", "Séoul", "Pékin", "Hiroshima", "Nagoya", "Sapporo", "Yokohama", "Shanghai"]
+        },
+        {
+          "question": "Quel fleuve traverse Paris ?",
+          "reponses": ["La Seine", "La Loire", "Le Rhône", "La Garonne", "Le Rhin", "La Somme", "La Meuse", "La Moselle", "La Dordogne", "Le Danube"]
+        }
+      ]
+    },
+    {
+      "categorie": "Sciences",
+      "questions": [
+        {
+          "question": "Quel est le symbole chimique de l'or ?",
+          "reponses": ["Au", "Ag", "Or", "Fe", "Pb", "Cu", "Go", "Hg", "Pt", "Zn"]
+        },
+        {
+          "question": "Quelle planète est la plus proche du Soleil ?",
+          "reponses": ["Mercure", "Vénus", "La Terre", "Mars", "Jupiter", "Saturne", "Uranus", "Neptune", "Pluton", "La Lune"]
+        },
+        {
+          "question": "Combien d'os compte le squelette d'un adulte humain ?",
+          "reponses": ["206", "196", "212", "250", "180", "300", "226", "150", "108", "186"]
+        },
+        {
+          "question": "Quelle est la formule chimique de l'eau ?",
+          "reponses": ["H2O", "CO2", "H2O2", "O2", "HO", "H3O", "NaCl", "CH4", "NH3", "H2"]
+        },
+        {
+          "question": "Quel scientifique a formulé la théorie de la relativité générale ?",
+          "reponses": ["Albert Einstein", "Isaac Newton", "Galilée", "Niels Bohr", "Max Planck", "Stephen Hawking", "Nikola Tesla", "Marie Curie", "Charles Darwin", "Louis Pasteur"]
+        },
+        {
+          "question": "Quelle est la vitesse approximative de la lumière dans le vide ?",
+          "reponses": ["300 000 km/s", "30 000 km/s", "3 000 km/s", "150 000 km/s", "1 000 000 km/s", "340 m/s", "3 000 000 km/s", "30 km/s", "100 000 km/s", "500 000 km/s"]
+        },
+        {
+          "question": "Quel organe du corps humain produit l'insuline ?",
+          "reponses": ["Le pancréas", "Le foie", "Les reins", "L'estomac", "La rate", "Le cœur", "La thyroïde", "Les poumons", "La vésicule biliaire", "L'intestin grêle"]
+        },
+        {
+          "question": "Quel gaz les plantes absorbent-elles pour réaliser la photosynthèse ?",
+          "reponses": ["Le dioxyde de carbone", "L'oxygène", "L'azote", "L'hydrogène", "L'hélium", "Le méthane", "L'argon", "L'ozone", "Le monoxyde de carbone", "Le néon"]
+        },
+        {
+          "question": "Qui a mis au point le premier vaccin contre la rage ?",
+          "reponses": ["Louis Pasteur", "Edward Jenner", "Robert Koch", "Alexander Fleming", "Marie Curie", "Claude Bernard", "Albert Calmette", "Jonas Salk", "Ignace Semmelweis", "Hippocrate"]
+        },
+        {
+          "question": "Quelle est la plus grande planète du système solaire ?",
+          "reponses": ["Jupiter", "Saturne", "Neptune", "Uranus", "La Terre", "Mars", "Vénus", "Mercure", "Pluton", "Le Soleil"]
+        },
+        {
+          "question": "À quelle température l'eau bout-elle au niveau de la mer ?",
+          "reponses": ["100 °C", "90 °C", "80 °C", "120 °C", "50 °C", "70 °C", "0 °C", "110 °C", "150 °C", "37 °C"]
+        },
+        {
+          "question": "Combien de chromosomes possède une cellule humaine normale (hors gamètes) ?",
+          "reponses": ["46", "23", "44", "48", "42", "22", "50", "24", "36", "64"]
+        }
+      ]
+    },
+    {
+      "categorie": "Arts et Littérature",
+      "questions": [
+        {
+          "question": "Qui a peint La Joconde ?",
+          "reponses": ["Léonard de Vinci", "Michel-Ange", "Raphaël", "Botticelli", "Titien", "Rembrandt", "Vermeer", "Caravage", "Pablo Picasso", "Claude Monet"]
+        },
+        {
+          "question": "Qui a écrit Les Misérables ?",
+          "reponses": ["Victor Hugo", "Émile Zola", "Honoré de Balzac", "Gustave Flaubert", "Alexandre Dumas", "Stendhal", "Guy de Maupassant", "Jules Verne", "Charles Baudelaire", "Molière"]
+        },
+        {
+          "question": "Quel peintre s'est coupé une partie de l'oreille en 1888 ?",
+          "reponses": ["Vincent van Gogh", "Paul Gauguin", "Claude Monet", "Paul Cézanne", "Salvador Dalí", "Pablo Picasso", "Auguste Renoir", "Edgar Degas", "Henri Matisse", "Henri de Toulouse-Lautrec"]
+        },
+        {
+          "question": "Qui a écrit Le Petit Prince ?",
+          "reponses": ["Antoine de Saint-Exupéry", "Jules Verne", "Albert Camus", "Marcel Pagnol", "Jean de La Fontaine", "Charles Perrault", "Victor Hugo", "Jacques Prévert", "Alexandre Dumas", "Marcel Proust"]
+        },
+        {
+          "question": "Quel compositeur a écrit l'opéra La Flûte enchantée ?",
+          "reponses": ["Wolfgang Amadeus Mozart", "Ludwig van Beethoven", "Jean-Sébastien Bach", "Antonio Vivaldi", "Frédéric Chopin", "Giuseppe Verdi", "Richard Wagner", "Joseph Haydn", "Franz Schubert", "Piotr Ilitch Tchaïkovski"]
+        },
+        {
+          "question": "Quel dramaturge a écrit Roméo et Juliette ?",
+          "reponses": ["William Shakespeare", "Molière", "Jean Racine", "Pierre Corneille", "Goethe", "Oscar Wilde", "Victor Hugo", "Christopher Marlowe", "Beaumarchais", "Anton Tchekhov"]
+        },
+        {
+          "question": "Quel peintre a réalisé le tableau « Impression, soleil levant » ?",
+          "reponses": ["Claude Monet", "Édouard Manet", "Auguste Renoir", "Edgar Degas", "Paul Cézanne", "Vincent van Gogh", "Gustave Courbet", "Eugène Delacroix", "Paul Gauguin", "Georges Seurat"]
+        },
+        {
+          "question": "Quel auteur français a écrit la fable « Le Corbeau et le Renard » ?",
+          "reponses": ["Jean de La Fontaine", "Charles Perrault", "Molière", "Jean Racine", "Nicolas Boileau", "François Rabelais", "Voltaire", "Michel de Montaigne", "Jean-Jacques Rousseau", "Pierre Corneille"]
+        },
+        {
+          "question": "Quel artiste espagnol a peint Guernica ?",
+          "reponses": ["Pablo Picasso", "Salvador Dalí", "Joan Miró", "Francisco de Goya", "Diego Velázquez", "Le Greco", "Antoni Gaudí", "Bartolomé Murillo", "Joaquín Sorolla", "Juan Gris"]
+        },
+        {
+          "question": "Quel compositeur a écrit la symphonie dont est tiré l'« Hymne à la joie » ?",
+          "reponses": ["Ludwig van Beethoven", "Wolfgang Amadeus Mozart", "Jean-Sébastien Bach", "Joseph Haydn", "Johannes Brahms", "Franz Schubert", "Gustav Mahler", "Antonín Dvořák", "Frédéric Chopin", "Franz Liszt"]
+        },
+        {
+          "question": "Quel écrivain a créé le personnage de Sherlock Holmes ?",
+          "reponses": ["Arthur Conan Doyle", "Agatha Christie", "Maurice Leblanc", "Edgar Allan Poe", "Charles Dickens", "Georges Simenon", "Jules Verne", "H. G. Wells", "Oscar Wilde", "Gaston Leroux"]
+        },
+        {
+          "question": "Quel sculpteur a réalisé « Le Penseur » ?",
+          "reponses": ["Auguste Rodin", "Camille Claudel", "Michel-Ange", "Auguste Bartholdi", "Donatello", "Alberto Giacometti", "Le Bernin", "Constantin Brancusi", "Aristide Maillol", "César"]
+        }
+      ]
+    },
+    {
+      "categorie": "Sport",
+      "questions": [
+        {
+          "question": "Combien de joueurs composent une équipe de football sur le terrain ?",
+          "reponses": ["11", "10", "9", "12", "7", "6", "15", "8", "13", "5"]
+        },
+        {
+          "question": "Quelle ville a accueilli les Jeux olympiques d'été de 2024 ?",
+          "reponses": ["Paris", "Los Angeles", "Tokyo", "Londres", "Rome", "Madrid", "Berlin", "Pékin", "Sydney", "Rio de Janeiro"]
+        },
+        {
+          "question": "Quel pays a remporté la Coupe du monde de football 2018 ?",
+          "reponses": ["La France", "La Croatie", "L'Allemagne", "Le Brésil", "L'Argentine", "L'Espagne", "La Belgique", "L'Angleterre", "L'Italie", "Le Portugal"]
+        },
+        {
+          "question": "Combien de temps dure un match de rugby à XV, hors prolongations ?",
+          "reponses": ["80 minutes", "90 minutes", "60 minutes", "70 minutes", "100 minutes", "40 minutes", "120 minutes", "85 minutes", "75 minutes", "50 minutes"]
+        },
+        {
+          "question": "Quel tournoi du Grand Chelem se joue sur terre battue à Paris ?",
+          "reponses": ["Roland-Garros", "Wimbledon", "L'US Open", "L'Open d'Australie", "Le Masters de Monte-Carlo", "La Coupe Davis", "Indian Wells", "Le tournoi du Queen's", "Le Masters de Miami", "L'Open de Madrid"]
+        },
+        {
+          "question": "Combien d'anneaux figurent sur le drapeau olympique ?",
+          "reponses": ["5", "4", "6", "7", "3", "8", "10", "9", "2", "12"]
+        },
+        {
+          "question": "Quel sport pratique Teddy Riner ?",
+          "reponses": ["Le judo", "Le karaté", "La lutte", "La boxe", "Le rugby", "Le taekwondo", "Le sumo", "L'escrime", "L'haltérophilie", "L'aïkido"]
+        },
+        {
+          "question": "Dans quel sport utilise-t-on un volant ?",
+          "reponses": ["Le badminton", "Le tennis", "Le squash", "Le tennis de table", "Le padel", "Le cricket", "Le hockey", "Le golf", "Le baseball", "Le volley-ball"]
+        },
+        {
+          "question": "Quelle course cycliste se termine traditionnellement sur les Champs-Élysées ?",
+          "reponses": ["Le Tour de France", "Le Tour d'Italie", "Le Tour d'Espagne", "Paris-Roubaix", "Milan-San Remo", "Le Tour des Flandres", "Liège-Bastogne-Liège", "Paris-Nice", "Le Critérium du Dauphiné", "Le Tour de Suisse"]
+        },
+        {
+          "question": "Quel athlète détient le record du monde masculin du 100 mètres ?",
+          "reponses": ["Usain Bolt", "Carl Lewis", "Tyson Gay", "Yohan Blake", "Asafa Powell", "Justin Gatlin", "Maurice Greene", "Christophe Lemaitre", "Noah Lyles", "Ben Johnson"]
+        },
+        {
+          "question": "Combien de trous compte un parcours de golf standard ?",
+          "reponses": ["18", "9", "12", "16", "20", "24", "10", "14", "21", "36"]
+        },
+        {
+          "question": "Quel club de football est surnommé « les Gones » ?",
+          "reponses": ["L'Olympique lyonnais", "L'Olympique de Marseille", "Le Paris Saint-Germain", "L'AS Saint-Étienne", "Les Girondins de Bordeaux", "Le LOSC Lille", "Le RC Lens", "Le FC Nantes", "Le Stade rennais", "L'AS Monaco"]
+        }
+      ]
+    }
+  ]
+}
