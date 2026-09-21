@@ -5,7 +5,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 WORKDIR /srv
 
-# Copied first so Docker caches the install as long as requirements.txt is unchanged
+# Copié en premier pour que Docker garde l'installation en cache tant que requirements.txt ne change pas
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 

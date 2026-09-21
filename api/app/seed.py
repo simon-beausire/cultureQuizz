@@ -8,15 +8,15 @@ from .models import Categorie, Question
 
 QUESTIONS_FILE = Path(__file__).resolve().parent.parent / "data" / "questions.json"
 
-# Every question stores exactly this many answers; the quiz then shows 4 of them.
+# Chaque question stocke exactement ce nombre de réponses ; le quiz en affiche 4.
 ANSWERS_PER_QUESTION = 10
 
 
 def seed(session: Session) -> int:
-    """Fill the database from data/questions.json.
+    """Remplit la base à partir de data/questions.json.
 
-    Does nothing if questions are already there, so it is safe to run at every
-    start-up. Returns the number of questions inserted.
+    Ne fait rien si les questions sont déjà là : on peut donc l'appeler à chaque
+    démarrage. Renvoie le nombre de questions insérées.
     """
     if session.scalar(select(func.count()).select_from(Question)):
         return 0
@@ -35,7 +35,7 @@ def seed(session: Session) -> int:
                     f"La question « {item['question']} » doit avoir exactement "
                     f"{ANSWERS_PER_QUESTION} réponses différentes."
                 )
-            # Appending to the relationship sets categorie_id for us
+            # Ajouter via la relation remplit categorie_id tout seul
             categorie.questions.append(Question(question=item["question"], answers=reponses))
             inserted += 1
 

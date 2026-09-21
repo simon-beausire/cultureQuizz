@@ -27,7 +27,7 @@ class Question(Base):
     )
     question: Mapped[str] = mapped_column(String(255))
 
-    # The 10 answers, in order. Index 0 is ALWAYS the correct one.
+    # Les 10 réponses, dans l'ordre. L'index 0 est TOUJOURS la bonne.
     answers: Mapped[list[str]] = mapped_column(JSON)
 
     categorie_parente: Mapped["Categorie"] = relationship(back_populates="questions")

@@ -5,12 +5,12 @@ from sqlalchemy.orm import Session, sessionmaker
 
 from .config import settings
 
-# pool_pre_ping: MySQL drops idle connections, this checks one before handing it out
+# pool_pre_ping : MySQL ferme les connexions inactives, on la teste avant de la donner
 engine = create_engine(settings.database_url, pool_pre_ping=True)
 SessionLocal = sessionmaker(bind=engine, expire_on_commit=False)
 
 
 def get_session() -> Iterator[Session]:
-    """FastAPI dependency: one session per request, always closed afterwards."""
+    """Dépendance FastAPI : une session par requête, toujours fermée ensuite."""
     with SessionLocal() as session:
         yield session

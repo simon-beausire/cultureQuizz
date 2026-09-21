@@ -16,8 +16,8 @@ logger = logging.getLogger("uvicorn")
 
 
 def wait_for_database(attempts: int = 30, delay: float = 2.0) -> None:
-    """Docker already waits for MySQL's healthcheck, but MySQL can still refuse
-    the very first connections while it finishes booting."""
+    """Docker attend déjà le healthcheck de MySQL, mais MySQL peut encore refuser
+    les toutes premières connexions pendant qu'il finit de démarrer."""
     for attempt in range(1, attempts + 1):
         try:
             with engine.connect():
@@ -31,8 +31,8 @@ def wait_for_database(attempts: int = 30, delay: float = 2.0) -> None:
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Runs once at start-up: create the tables, then fill them if they are empty.
-    # This replaces Laravel's `php artisan migrate --seed`.
+    # Exécuté une fois au démarrage : crée les tables, puis les remplit si elles sont vides.
+    # Remplace le `php artisan migrate --seed` de Laravel.
     wait_for_database()
     Base.metadata.create_all(engine)
 

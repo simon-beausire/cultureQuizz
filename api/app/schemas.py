@@ -11,7 +11,7 @@ class CategorieOut(BaseModel):
 class AnswerOut(BaseModel):
     id: int
     text: str
-    # camelCase on purpose: this is the name the front-end reads
+    # camelCase volontaire : c'est le nom que lit le front
     isCorrect: bool
 
 

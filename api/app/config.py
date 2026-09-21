@@ -4,7 +4,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
-    """Read from environment variables, or from a .env file when running outside Docker."""
+    """Lu depuis les variables d'environnement, ou depuis un .env hors Docker."""
 
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
@@ -18,7 +18,7 @@ class Settings(BaseSettings):
 
     @property
     def database_url(self) -> str:
-        # quote_plus so a password with @ or / cannot break the URL
+        # quote_plus pour qu'un mot de passe avec @ ou / ne casse pas l'URL
         return (
             f"mysql+pymysql://{self.db_username}:{quote_plus(self.db_password)}"
             f"@{self.db_host}:{self.db_port}/{self.db_database}?charset=utf8mb4"
