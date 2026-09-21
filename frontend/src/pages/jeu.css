@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap");
+
+/* Neutralise la coquille du template Vite qui vit encore dans index.css :
+   #root y est figé à 1126px, centré, bordé et sur fond clair.
+   À terme ces règles ont leur place dans index.css, pas ici. */
+#root {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  border-inline: none;
+  text-align: left;
+  background: #0b0a18;
+}
+
+/* ── Écran ──────────────────────────────────────────────────────── */
+
+.jeu {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  min-height: 100svh;
+  background: #0b0a18;
+}
+
+.jeu__screen {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 420px;
+  min-height: 100svh;
+  background: linear-gradient(180deg, #14122e 0%, #1e1b4b 100%);
+}
+
+/* ── En-tête : compteur, score, chrono ──────────────────────────── */
+
+.jeu__head {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  gap: 18px;
+  padding: 20px 24px 0;
+}
+
+.jeu__head-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.jeu__meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.jeu__pill {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding: 0 12px;
+  border: 1px solid #3a3570;
+  border-radius: 99px;
+  background: #262252;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  color: #a9a3d4;
+  white-space: nowrap;
+}
+
+.jeu__score {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 99px;
+  background: rgba(255, 176, 32, 0.14);
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+  color: #ffb020;
+  white-space: nowrap;
+}
+
+.jeu__score::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ffb020;
+}
+
+.jeu__timer {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+  color: #f5f3ff;
+}
+
+.jeu__track {
+  height: 8px;
+  border-radius: 99px;
+  background: #312c63;
+}
+
+/* La largeur est posée à l'écran : c'est le temps qu'il reste. */
+.jeu__track > i {
+  display: block;
+  width: 0;
+  height: 100%;
+  border-radius: 99px;
+  background: #7c5cff;
+  box-shadow: 0 0 14px rgba(124, 92, 255, 0.75);
+  transition: width 0.3s linear;
+}
+
+/* ── Question ───────────────────────────────────────────────────── */
+
+.jeu__body {
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+  min-height: 0;
+  padding: 34px 24px;
+}
+
+.jeu__question {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 1.35;
+  letter-spacing: normal;
+  color: #f5f3ff;
+  text-wrap: pretty;
+}
+
+/* ── Réponses ───────────────────────────────────────────────────── */
+
+.jeu__answers {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 24px 18px;
+}
+
+/* ── Action : envoyer, question suivante ────────────────────────── */
+
+.jeu__actions {
+  display: flex;
+  flex: none;
+  padding: 0 24px 28px;
+}
+
+/* ── Fin de partie (provisoire, en attendant l'écran résultat) ───── */
+
+.jeu__body--fin {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  text-align: center;
+}
+
+.jeu__fin-titre {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 16px;
+  color: #a9a3d4;
+}
+
+.jeu__fin-score {
+  margin: 0;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+  color: #f5f3ff;
+}
+
+.jeu__fin-score > small {
+  font-size: 26px;
+  color: #6e689b;
+}
+
+/* ── Au-delà du mobile : on retrouve le cadre 375 × 812 du design ── */
+
+@media (min-width: 768px) {
+  .jeu {
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  .jeu__screen {
+    max-width: 375px;
+    min-height: 0;
+    height: 812px;
+    border-radius: 38px;
+    box-shadow:
+      0 0 0 1px #3a3570,
+      0 30px 70px rgba(124, 92, 255, 0.18);
+  }
+
+  .jeu__head {
+    padding-top: 28px;
+  }
+}
