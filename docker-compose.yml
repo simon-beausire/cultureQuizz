@@ -8,14 +8,21 @@ services:
       MYSQL_USER: quizz
       MYSQL_PASSWORD: quizz
     ports:
-      # Port 3307 côté machine car un MySQL local peut déjà utiliser 3306 sous Windows.
-      # Dans Docker, l'API joint toujours MySQL sur db:3306.
       - "3307:3306"
     volumes:
       - mysql_data:/var/lib/mysql
     healthcheck:
-      # 127.0.0.1 force le TCP : le test ne passe que quand MySQL est vraiment prêt
-      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-u", "root", "-prootpassword"]
+      test:
+        [
+          "CMD",
+          "mysqladmin",
+          "ping",
+          "-h",
+          "127.0.0.1",
+          "-u",
+          "root",
+          "-prootpassword",
+        ]
       interval: 5s
       timeout: 5s
       retries: 20
@@ -31,8 +38,12 @@ services:
       DB_USERNAME: quizz
       DB_PASSWORD: quizz
       CORS_ALLOWED_ORIGINS: "http://localhost:5173,http://127.0.0.1:5173"
+      # Clé de DÉVELOPPEMENT, volontairement fixe. Sans elle, une clé aléatoire
+      # est tirée à chaque démarrage : uvicorn --reload redémarre à chaque
+      # sauvegarde, et toutes les parties déjà ouvertes deviennent invalides.
+      # En production, fournir une vraie clé secrète par l'environnement.
+      SECRET_KEY: "developpement-local-culturequizz-ne-pas-utiliser-en-production"
     volumes:
-      # Rechargement à chaud : on modifie un fichier sous Windows, l'API redémarre seule
       - ./api:/srv
     depends_on:
       db:

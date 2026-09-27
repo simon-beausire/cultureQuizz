@@ -3,9 +3,24 @@ __pycache__/
 *.py[cod]
 .venv/
 venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
-# Secrets / local config (api/.env.example is committed, .env is not)
+# Node (le détail est dans frontend/.gitignore)
+node_modules/
+dist/
+
+# Secrets et config locale : les .env.example sont committés, pas les .env
 .env
+.env.*
+!.env.example
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
 
 # OS
 .DS_Store

@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap");
+
+.accueil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-height: 100svh;
+  padding: 40px 20px;
+  background: linear-gradient(180deg, #14122e 0%, #1e1b4b 100%);
+  cursor: pointer;
+}
+
+.accueil__screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 340px;
+  text-align: center;
+}
+
+.accueil__logo {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 132px;
+  height: 132px;
+  border: 1px solid #3a3570;
+  border-radius: 38px;
+  background: #262252;
+  box-shadow: 0 18px 50px rgba(124, 92, 255, 0.28);
+}
+
+.accueil__logo-losange {
+  position: absolute;
+  width: 86px;
+  height: 86px;
+  transform: rotate(45deg);
+  border-radius: 26px;
+  background: #7c5cff;
+  box-shadow: 0 0 34px rgba(124, 92, 255, 0.6);
+}
+
+.accueil__logo-point {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ffb020;
+}
+
+.accueil__logo-marque {
+  position: relative;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 1;
+  color: #f5f3ff;
+}
+
+.accueil__marque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.accueil__titre {
+  margin: 0;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.035em;
+  color: #f5f3ff;
+}
+
+.accueil__intro {
+  max-width: 250px;
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #a9a3d4;
+  text-wrap: pretty;
+}
+
+.accueil__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  margin-top: 16px;
+}
+
+.accueil__actions .cq-bu {
+  height: 58px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(124, 92, 255, 0.4);
+  font-size: 18px;
+}
+
+.accueil__indice {
+  margin: 0;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11px;
+  color: #6e689b;
+}
+
+@media (min-width: 768px) {
+  .accueil__screen {
+    max-width: 420px;
+    gap: 30px;
+  }
+
+  .accueil__logo {
+    width: 156px;
+    height: 156px;
+    border-radius: 44px;
+  }
+
+  .accueil__logo-losange {
+    width: 102px;
+    height: 102px;
+    border-radius: 31px;
+  }
+
+  .accueil__logo-point {
+    right: 28px;
+    bottom: 28px;
+    width: 21px;
+    height: 21px;
+  }
+
+  .accueil__logo-marque {
+    font-size: 62px;
+  }
+
+  .accueil__titre {
+    font-size: 60px;
+  }
+
+  .accueil__intro {
+    max-width: 330px;
+    font-size: 17px;
+  }
+
+  .accueil__actions {
+    margin-top: 20px;
+  }
+
+  .accueil__actions .cq-bu {
+    width: auto;
+    min-width: 260px;
+  }
+}

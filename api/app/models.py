@@ -26,8 +26,6 @@ class Question(Base):
         ForeignKey("categories.id", ondelete="CASCADE"), index=True
     )
     question: Mapped[str] = mapped_column(String(255))
-
-    # Les 10 réponses, dans l'ordre. L'index 0 est TOUJOURS la bonne.
     answers: Mapped[list[str]] = mapped_column(JSON)
 
     categorie_parente: Mapped["Categorie"] = relationship(back_populates="questions")

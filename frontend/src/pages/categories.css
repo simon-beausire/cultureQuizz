@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap");
+
+.categories {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  min-height: 100svh;
+  background: linear-gradient(180deg, #14122e 0%, #1e1b4b 100%);
+}
+
+.categories__screen {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1120px;
+  padding: 0 20px;
+}
+
+.categories__choix {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.categories__choix-tete {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.categories__choix-titre {
+  margin: 0;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: #f5f3ff;
+}
+
+.categories__choix-sous {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 14px;
+  color: #a9a3d4;
+  font-variant-numeric: tabular-nums;
+}
+
+.categories__grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 16px;
+  align-content: start;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.categories__case {
+  display: flex;
+  min-width: 0;
+}
+
+.categories__carte {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 130px;
+  margin: 0;
+  padding: 18px 16px;
+  border: 1px solid #3a3570;
+  border-radius: 20px;
+  background: #262252;
+  text-align: left;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    background-color 0.18s ease,
+    border-color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.12s ease;
+}
+
+.categories__carte:hover {
+  border-color: #7c5cff;
+  background: #2b2760;
+  box-shadow: 0 10px 26px rgba(124, 92, 255, 0.22);
+  transform: translateY(-2px);
+}
+
+.categories__carte:active {
+  border-color: #7c5cff;
+  background: #2e2870;
+  box-shadow:
+    0 0 0 4px rgba(124, 92, 255, 0.18),
+    0 10px 26px rgba(124, 92, 255, 0.3);
+  transform: translateY(0) scale(0.99);
+}
+
+.categories__carte:focus-visible {
+  outline: 2px solid #7c5cff;
+  outline-offset: 3px;
+}
+
+.categories__icone {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: rgba(124, 92, 255, 0.16);
+}
+
+.categories__carte-texte {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.categories__carte-nom {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.2;
+  color: #f5f3ff;
+}
+
+.categories__carte-compte {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 12px;
+  color: #a9a3d4;
+  font-variant-numeric: tabular-nums;
+}
+
+.categories__forme {
+  display: block;
+  box-sizing: border-box;
+  width: 18px;
+  height: 18px;
+}
+
+.categories__forme--cercle {
+  border: 3px solid #7c5cff;
+  border-radius: 50%;
+}
+
+.categories__forme--demi {
+  border: 2px solid #7c5cff;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #7c5cff 50%, transparent 50%);
+}
+
+.categories__forme--goutte {
+  border-radius: 50% 50% 50% 4px;
+  background: #ffb020;
+}
+
+.categories__forme--losange {
+  width: 16px;
+  height: 16px;
+  transform: rotate(45deg);
+  background: #7c5cff;
+}
+
+.categories__forme--point {
+  border-radius: 50%;
+  background: #ffb020;
+}
+
+.categories__icone:has(.categories__forme--goutte),
+.categories__icone:has(.categories__forme--point) {
+  background: rgba(255, 176, 32, 0.14);
+}
+
+.categories__barre {
+  width: 170px;
+  height: 13px;
+  border-radius: 99px;
+  background: #2a2555;
+}
+
+.categories__fantome {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  box-sizing: border-box;
+  min-height: 130px;
+  padding: 18px 16px;
+  border: 1px solid #2f2a5e;
+  border-radius: 20px;
+  background: #221f49;
+}
+
+.categories__fantome-icone {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: #2e2a60;
+}
+
+.categories__fantome-lignes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.categories__fantome-lignes span {
+  height: 14px;
+  border-radius: 99px;
+  background: #332e6b;
+}
+
+.categories__fantome-lignes span + span {
+  width: 48%;
+  height: 10px;
+  background: #2a2555;
+}
+
+.categories__attente {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0 0 32px;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 13px;
+  color: #a9a3d4;
+}
+
+.categories__puce {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #7c5cff;
+  animation: categories-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes categories-pulse {
+  50% {
+    opacity: 0.25;
+  }
+}
+
+.categories__alerte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 32px 0;
+}
+
+.categories__erreur {
+  max-width: 480px;
+  margin: 0;
+  padding: 14px 16px;
+  border: 1px solid #ef4444;
+  border-radius: 18px;
+  background: #3a1620;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #ffefef;
+  text-align: center;
+  text-wrap: pretty;
+}
+
+.categories__alerte .cq-bu {
+  width: auto;
+  min-width: 220px;
+}
+
+@media (min-width: 768px) {
+  .categories__screen {
+    padding: 0 40px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  .categories__choix {
+    gap: 24px;
+    padding: 72px 0 64px;
+  }
+  .categories__choix-titre {
+    font-size: 32px;
+  }
+  .categories__grille {
+    gap: 18px;
+  }
+  .categories__carte,
+  .categories__fantome {
+    min-height: 150px;
+    padding: 22px 20px;
+  }
+  .categories__icone {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+  }
+  .categories__carte-nom {
+    font-size: 19px;
+  }
+  .categories__carte-compte {
+    font-size: 13px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .categories__carte {
+    transition: none;
+  }
+  .categories__carte:hover,
+  .categories__carte:active {
+    transform: none;
+  }
+  .categories__puce {
+    animation: none;
+  }
+}

@@ -7,15 +7,18 @@ Détails techniques. Pour démarrer le projet, voir le [README à la racine](../
 ```
 api/
 ├── Dockerfile · requirements.txt · .env.example
-├── data/questions.json   # LA source des questions (5 catégories, 60 questions)
+├── data/questions.json   # LA source des questions (5 catégories, 250 questions)
 └── app/
     ├── main.py           # app, CORS, démarrage
     ├── config.py         # variables d'environnement
     ├── database.py       # connexion MySQL + session par requête
     ├── models.py         # les 2 tables (SQLAlchemy)
-    ├── schemas.py        # forme du JSON renvoyé (Pydantic)
+    ├── schemas.py        # forme du JSON échangé (Pydantic)
     ├── seed.py           # remplit la base depuis questions.json
-    └── routers/categories.py   # les 2 routes du quiz
+    ├── securite.py       # jetons signés des réponses (HMAC)
+    └── routers/
+        ├── categories.py # liste des catégories, tirage des questions
+        └── reponses.py   # POST /api/answer : dit si la réponse est la bonne
 ```
 
 ## Format des réponses
@@ -24,25 +27,37 @@ api/
 
 ```json
 [
-  { "id": 1, "categorie": "Histoire" },
-  { "id": 2, "categorie": "Géographie" }
+  { "id": 1, "categorie": "Python", "nbQuestions": 50 },
+  { "id": 2, "categorie": "Réseau (CCNA)", "nbQuestions": 50 }
 ]
 ```
 
-### `GET /api/categories/{id}/questions`
+`nbQuestions` est la taille de la réserve, affichée sur les cartes de l'accueil.
+
+### `GET /api/categories/{id}/questions?vues=3,17,42`
 
 10 questions au hasard, chacune avec 4 réponses mélangées (la bonne + 3 mauvaises tirées au sort).
 
+`vues` liste les questions déjà tombées chez ce joueur (le front les garde dans
+`localStorage`). Elles sont **écartées du tirage** tant qu'il reste de quoi
+remplir une partie : c'est ce qui empêche la même question de revenir d'une
+partie à l'autre. Quand la réserve d'inédites est vide, l'API complète avec le
+reste du stock et met `nouveauCycle` à `true` — le front sait alors qu'il peut
+oublier l'historique de la catégorie. Un `vues` bricolé (valeurs non entières)
+est ignoré sans erreur : au pire le tirage est moins malin.
+
 ```json
 {
-  "categorie": { "id": 1, "categorie": "Histoire" },
+  "categorie": { "id": 1, "categorie": "Python", "nbQuestions": 50 },
+  "nouveauCycle": false,
+  "jeton": "a3SF-StXzuEaX4bt",
   "questions": [
     {
       "id": 5,
-      "question": "Qui a été la première femme à recevoir un prix Nobel ?",
+      "question": "Quel mot-clé définit une fonction en Python ?",
       "answers": [
-        { "id": 10, "text": "Hypatie",     "isCorrect": false },
-        { "id": 1,  "text": "Marie Curie", "isCorrect": true  }
+        { "id": "9f2c1ab4e7d05836", "text": "lambda" },
+        { "id": "0a241d5bd59e0ac9", "text": "def"    }
       ]
     }
   ]
@@ -52,7 +67,37 @@ api/
 Catégorie inexistante → **404** `{ "detail": "Catégorie introuvable." }`
 Id non numérique → **422** (FastAPI le rejette avant d'exécuter le code).
 
-> ⚠️ `isCorrect` est envoyé au front : un joueur peut lire les bonnes réponses dans l'onglet réseau. C'est volontaire ici. Pour un vrai score anti-triche, il faudrait une route `POST /api/answer` qui vérifie côté serveur.
+### `POST /api/answer`
+
+La charge utile des questions **ne dit pas** quelle réponse est la bonne. L'`id`
+d'une réponse est un jeton HMAC calculé sur `(jeton de tirage, id de question,
+position en base)` avec `SECRET_KEY` : sans la clé, il est impossible de savoir
+lequel des quatre ids correspond à la position 0, celle de la bonne réponse.
+
+```json
+{ "jeton": "a3SF-StXzuEaX4bt", "questionId": 5, "answerId": "0a241d5bd59e0ac9" }
+```
+
+```json
+{ "correct": true, "bonneReponseId": "0a241d5bd59e0ac9" }
+```
+
+`bonneReponseId` permet au front d'afficher la bonne réponse en vert même quand
+le joueur s'est trompé. `answerId` vaut `null` quand le chrono s'est écoulé sans
+réponse : la route renvoie alors `correct: false` et la bonne réponse.
+
+Le jeton de tirage change à chaque appel de la route des questions : les ids d'une
+partie ne sont donc pas rejouables sur la suivante.
+
+Question inexistante → **404**.
+
+> ⚠️ **Ce que ça protège, et ce que ça ne protège pas.** Les bonnes réponses ne
+> partent plus d'avance : l'onglet réseau ne les révèle plus. En revanche la route
+> est sans état, donc rien n'empêche d'appeler `POST /api/answer` avec un
+> `answerId` bidon *avant* de répondre pour lire `bonneReponseId`. Et le score
+> reste compté par le front. Fermer ces deux trous demanderait de garder la partie
+> côté serveur (quelles questions, lesquelles déjà répondues) et d'y déplacer le
+> score.
 
 ## Les tables
 
@@ -62,13 +107,36 @@ Id non numérique → **422** (FastAPI le rejette avant d'exécuter le code).
 
 `answers` est une colonne **JSON** contenant les 10 réponses. **`answers[0]` est toujours la bonne** en base ; le mélange se fait au moment de la requête, jamais en base.
 
+## Les dépendances
+
+`pymysql` est le pilote MySQL derrière l'URL `mysql+pymysql://`, et `cryptography`
+lui est indispensable pour parler l'authentification `caching_sha2_password`, celle
+que MySQL 8 utilise par défaut — sans elle, la connexion échoue au démarrage.
+
+## `SECRET_KEY`
+
+Elle signe les jetons de réponse, et **doit rester stable** : un jeton émis avec une
+clé ne se vérifie qu'avec la même. `docker-compose.yml` en fixe donc une pour le
+développement. Sans elle, une clé aléatoire est tirée à chaque démarrage — et comme
+uvicorn tourne avec `--reload`, la moindre sauvegarde d'un `.py` invalide toutes les
+parties déjà ouvertes dans un navigateur.
+
+En production, fournir une vraie clé par l'environnement ; celle du `docker-compose`
+n'a aucune valeur secrète puisqu'elle est dans le dépôt.
+
+Si un jeton ne correspond malgré tout à aucune réponse de la question — clé changée,
+onglet resté ouvert — `POST /api/answer` répond **409** plutôt que de compter la
+réponse comme fausse. Le front affiche alors « Cette partie n'est plus valide,
+relance-la. » avec un bouton *Réessayer*, au lieu de marquer silencieusement les
+quatre réponses en rouge.
+
 ## Le démarrage
 
 Avant d'accepter la moindre requête, `lifespan()` dans `main.py` fait 3 choses :
 
 1. **`wait_for_database()`** — réessaie jusqu'à 30 fois. Docker attend déjà le *healthcheck* de MySQL, mais MySQL peut encore refuser les toutes premières connexions.
 2. **`create_all()`** — crée les tables si elles n'existent pas (l'équivalent de `php artisan migrate`).
-3. **`seed()`** — si `questions` est vide, insère tout `questions.json`. Sinon ne fait **rien** : on peut redémarrer sans dupliquer.
+3. **`seed()`** — insère de `questions.json` ce qui manque en base, et rien d'autre. Une question déjà présente (même catégorie, même intitulé) est ignorée : on peut redémarrer sans dupliquer, **et** ajouter des questions au fichier sans repartir d'un volume MySQL vide.
 
 ## Le tirage des réponses
 
@@ -86,11 +154,11 @@ Tout est dans `data/questions.json` :
 
 ```json
 {
-  "categorie": "Histoire",
+  "categorie": "Python",
   "questions": [
     {
-      "question": "En quelle année a eu lieu la prise de la Bastille ?",
-      "reponses": ["1789", "1792", "1776", "1815", "1799", "1804", "1830", "1848", "1774", "1793"]
+      "question": "Quel mot-clé définit une fonction en Python ?",
+      "reponses": ["def", "function", "func", "fn", "define", "sub", "method", "proc", "void", "declare"]
     }
   ]
 }
@@ -98,7 +166,16 @@ Tout est dans `data/questions.json` :
 
 Règles **obligatoires** (sinon l'API refuse de démarrer, en nommant la question fautive) : exactement **10 réponses**, **toutes différentes**, **la première est la bonne**.
 
-Le seed ne tourne que sur une base vide, donc il faut la remettre à zéro :
+Un simple `docker compose restart api` suffit ensuite : le *seed* insère les
+nouvelles questions sans toucher aux anciennes.
+
+Plus la réserve d'une catégorie est grande, plus on enchaîne de parties avant de
+revoir une question : à 50 questions, cinq parties de suite sont entièrement
+inédites.
+
+Pour **retirer ou modifier** des questions existantes, en revanche, le *seed* ne
+suffit pas : il n'insère que ce qui manque et ne supprime jamais rien. Il faut
+repartir d'une base vide :
 
 ```bash
 docker compose down -v      # -v supprime le volume, donc les données

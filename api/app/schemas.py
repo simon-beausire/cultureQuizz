@@ -6,13 +6,12 @@ class CategorieOut(BaseModel):
 
     id: int
     categorie: str
+    nbQuestions: int
 
 
 class AnswerOut(BaseModel):
-    id: int
+    id: str
     text: str
-    # camelCase volontaire : c'est le nom que lit le front
-    isCorrect: bool
 
 
 class QuestionOut(BaseModel):
@@ -24,3 +23,16 @@ class QuestionOut(BaseModel):
 class QuizOut(BaseModel):
     categorie: CategorieOut
     questions: list[QuestionOut]
+    nouveauCycle: bool
+    jeton: str
+
+
+class VerificationIn(BaseModel):
+    jeton: str
+    questionId: int
+    answerId: str | None = None
+
+
+class VerificationOut(BaseModel):
+    correct: bool
+    bonneReponseId: str

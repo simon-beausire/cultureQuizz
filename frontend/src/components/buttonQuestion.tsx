@@ -1,13 +1,5 @@
 import type { ComponentPropsWithoutRef } from "react";
 
-/**
- * ButtonQuestion — la carte-réponse du quiz.
- *
- * Design « Culture Quiz » → Design System / Carte-réponse · 5 états · rayon 20,
- * telle qu'utilisée dans les écrans 03 à 06 (quiz neutre, bonne réponse,
- * mauvaise réponse, temps écoulé).
- */
-
 export type ButtonQuestionState =
   | "neutral"
   | "selected"
@@ -20,14 +12,10 @@ type NativeButtonProps = Omit<
   "children" | "aria-label" | "aria-pressed"
 >;
 
-export interface ButtonQuestionProps extends NativeButtonProps {
-  /** Texte de la réponse. */
+interface ButtonQuestionProps extends NativeButtonProps {
   label: string;
-  /** Pastille de gauche : « A », « B »… Remplacée par ✓ / ✕ une fois révélée. */
   letter?: string;
-  /** État visuel de la carte. */
   state?: ButtonQuestionState;
-  /** Réponse réellement choisie par le joueur : ajoute la lueur portée. */
   chosen?: boolean;
 }
 
@@ -39,7 +27,6 @@ const STATE_CLASS: Record<ButtonQuestionState, string> = {
   muted: "cq-aq--muted",
 };
 
-/** Une fois la réponse révélée, la pastille porte le verdict, plus la lettre. */
 const BADGE_SYMBOL: Partial<Record<ButtonQuestionState, string>> = {
   correct: "✓",
   wrong: "✕",
@@ -109,8 +96,6 @@ const CSS = `
   text-wrap: pretty;
 }
 
-/* ── Les 5 états ────────────────────────────────────────────────── */
-
 .cq-aq--selected {
   --cq-aq-bg: #2e2870;
   --cq-aq-border: #7c5cff;
@@ -151,8 +136,6 @@ const CSS = `
   --cq-aq-label: #6e689b;
 }
 
-/* La carte que le joueur a lui-même choisie porte la lueur ; celle qui n'est
-   que révélée (écran 06) garde le simple anneau. */
 .cq-aq--correct.cq-aq--chosen {
   --cq-aq-shadow: 0 0 0 4px rgba(34, 197, 94, .14),
                   0 10px 26px rgba(34, 197, 94, .2);
@@ -162,8 +145,6 @@ const CSS = `
   --cq-aq-shadow: 0 0 0 4px rgba(239, 68, 68, .14),
                   0 10px 26px rgba(239, 68, 68, .18);
 }
-
-/* ── Interactions, tant que la carte est jouable ────────────────── */
 
 .cq-aq:disabled {
   cursor: default;
@@ -199,8 +180,6 @@ export function ButtonQuestion({
   letter,
   state = "neutral",
   chosen = false,
-  disabled,
-  className,
   ...rest
 }: ButtonQuestionProps) {
   const revealed = state === "correct" || state === "wrong";
@@ -208,23 +187,21 @@ export function ButtonQuestion({
 
   const classes = ["cq-aq", STATE_CLASS[state]];
   if (chosen) classes.push("cq-aq--chosen");
-  if (className) classes.push(className);
 
   return (
     <>
-      {/* React 19 remonte la feuille dans <head> et la dédoublonne par href. */}
       <style href="cq-button-question" precedence="medium">
         {CSS}
       </style>
       <button
         type="button"
+        {...rest}
         className={classes.join(" ")}
-        disabled={disabled ?? (revealed || state === "muted")}
+        disabled={revealed || state === "muted"}
         aria-pressed={revealed || state === "muted" ? undefined : state === "selected"}
         aria-label={[letter && `${letter}.`, label, STATE_HINT[state]]
           .filter(Boolean)
           .join(" ")}
-        {...rest}
       >
         <span className="cq-aq__badge" aria-hidden="true">
           {badge}

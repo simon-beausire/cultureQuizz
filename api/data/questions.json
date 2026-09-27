@@ -1,267 +1,1027 @@
 {
   "categories": [
     {
-      "categorie": "Histoire",
+      "categorie": "Python",
       "questions": [
         {
-          "question": "En quelle année a eu lieu la prise de la Bastille ?",
-          "reponses": ["1789", "1792", "1776", "1815", "1799", "1804", "1830", "1848", "1774", "1793"]
+          "question": "Quel mot-clé définit une fonction en Python ?",
+          "reponses": ["def", "function", "func", "fn", "define", "sub", "method", "proc", "void", "declare"]
         },
         {
-          "question": "Qui a été le premier empereur des Français ?",
-          "reponses": ["Napoléon Ier", "Louis XVI", "Charlemagne", "Napoléon III", "Louis XIV", "Charles de Gaulle", "Henri IV", "François Ier", "Louis-Philippe", "Jules César"]
+          "question": "Quelle méthode ajoute un élément à la fin d'une liste ?",
+          "reponses": ["append()", "add()", "push()", "insert()", "extend()", "put()", "attach()", "concat()", "expand()", "stack()"]
         },
         {
-          "question": "En quelle année a commencé la Première Guerre mondiale ?",
-          "reponses": ["1914", "1918", "1939", "1905", "1912", "1916", "1870", "1920", "1911", "1945"]
+          "question": "Quel type représente une collection non ordonnée d'éléments uniques ?",
+          "reponses": ["set", "list", "tuple", "dict", "array", "bag", "vector", "sequence", "deque", "frozenlist"]
         },
         {
-          "question": "Quelle civilisation a construit le Machu Picchu ?",
-          "reponses": ["Les Incas", "Les Aztèques", "Les Mayas", "Les Olmèques", "Les Toltèques", "Les Égyptiens", "Les Romains", "Les Khmers", "Les Zapotèques", "Les Mochicas"]
+          "question": "Que renvoie type(3 / 2) en Python 3 ?",
+          "reponses": ["float", "int", "decimal", "complex", "fraction", "str", "bool", "long", "double", "number"]
         },
         {
-          "question": "Qui a été la première femme à recevoir un prix Nobel ?",
-          "reponses": ["Marie Curie", "Rosalind Franklin", "Ada Lovelace", "Simone Veil", "Florence Nightingale", "Lise Meitner", "George Sand", "Louise Michel", "Olympe de Gouges", "Hypatie"]
+          "question": "Quel mot-clé crée une fonction anonyme ?",
+          "reponses": ["lambda", "def", "anon", "func", "inline", "arrow", "closure", "fn", "proc", "auto"]
         },
         {
-          "question": "En quelle année l'homme a-t-il marché sur la Lune pour la première fois ?",
-          "reponses": ["1969", "1965", "1972", "1957", "1961", "1975", "1967", "1981", "1959", "1971"]
+          "question": "Quel mot-clé garantit la fermeture d'un fichier à la sortie du bloc ?",
+          "reponses": ["with", "try", "using", "defer", "scope", "lock", "auto", "final", "close", "ensure"]
         },
         {
-          "question": "Quel mur est tombé en 1989 ?",
-          "reponses": ["Le mur de Berlin", "Le mur d'Hadrien", "Le mur des Lamentations", "La ligne Maginot", "Le mur de Varsovie", "Le mur de Belfast", "Le mur de Vienne", "Le mur de Prague", "Le mur de Moscou", "Le mur de Budapest"]
+          "question": "Quelle fonction renvoie la longueur d'une séquence ?",
+          "reponses": ["len()", "size()", "length()", "count()", "sizeof()", "dim()", "total()", "num()", "cardinal()", "measure()"]
         },
         {
-          "question": "Quel pharaon est célèbre pour son tombeau découvert presque intact en 1922 ?",
-          "reponses": ["Toutânkhamon", "Ramsès II", "Khéops", "Akhenaton", "Séthi Ier", "Khéphren", "Amenhotep III", "Thoutmôsis III", "Mykérinos", "Hatchepsout"]
+          "question": "Quel module de la bibliothèque standard lit et écrit du JSON ?",
+          "reponses": ["json", "simplejson", "pickle", "yaml", "csv", "struct", "marshal", "codecs", "shelve", "configparser"]
         },
         {
-          "question": "Quel navigateur a atteint l'Amérique en 1492 ?",
-          "reponses": ["Christophe Colomb", "Vasco de Gama", "Fernand de Magellan", "Amerigo Vespucci", "Jacques Cartier", "Marco Polo", "James Cook", "Hernán Cortés", "Francisco Pizarro", "Bartolomeu Dias"]
+          "question": "Que fait l'opérateur ** entre deux nombres ?",
+          "reponses": ["l'exponentiation", "la multiplication", "la division entière", "le modulo", "la concaténation", "le ET binaire", "le décalage à gauche", "la racine carrée", "le OU binaire", "la valeur absolue"]
         },
         {
-          "question": "En quelle année les Françaises ont-elles voté pour la première fois ?",
-          "reponses": ["1945", "1936", "1918", "1958", "1968", "1901", "1920", "1950", "1929", "1848"]
+          "question": "Quel est le type de la valeur True ?",
+          "reponses": ["bool", "int", "boolean", "bit", "flag", "logical", "binary", "truth", "byte", "str"]
         },
         {
-          "question": "Quelle ville était la capitale de l'Empire byzantin ?",
-          "reponses": ["Constantinople", "Rome", "Athènes", "Alexandrie", "Antioche", "Jérusalem", "Venise", "Carthage", "Damas", "Babylone"]
+          "question": "Comment appelle-t-on l'expression [x * 2 for x in liste] ?",
+          "reponses": ["une compréhension de liste", "un générateur", "une lambda", "une projection", "un décorateur", "une itération", "une fabrique", "un filtre", "une boucle en ligne", "une map"]
         },
         {
-          "question": "Quel roi de France était surnommé le Roi-Soleil ?",
-          "reponses": ["Louis XIV", "Louis XIII", "Louis XV", "Louis XVI", "Henri IV", "François Ier", "Charles VII", "Philippe le Bel", "Louis IX", "Charles X"]
+          "question": "Quel mot-clé interrompt complètement une boucle ?",
+          "reponses": ["break", "continue", "stop", "exit", "return", "halt", "end", "quit", "pass", "leave"]
+        },
+        {
+          "question": "Quel mot-clé passe directement à l'itération suivante ?",
+          "reponses": ["continue", "break", "next", "skip", "pass", "advance", "step", "resume", "iterate", "forward"]
+        },
+        {
+          "question": "Que fait l'instruction pass ?",
+          "reponses": ["rien, c'est une instruction vide", "elle saute l'itération", "elle quitte la fonction", "elle lève une exception", "elle ignore les erreurs", "elle met le programme en pause", "elle transmet un argument", "elle renvoie None explicitement", "elle termine le programme", "elle vide une variable"]
+        },
+        {
+          "question": "Quelle structure associe des clés à des valeurs ?",
+          "reponses": ["dict", "list", "set", "tuple", "array", "record", "table", "pair", "index", "hash"]
+        },
+        {
+          "question": "Quel mot-clé lève une exception ?",
+          "reponses": ["raise", "throw", "except", "error", "panic", "fail", "signal", "emit", "abort", "trigger"]
+        },
+        {
+          "question": "Quel bloc s'exécute qu'il y ait eu une exception ou non ?",
+          "reponses": ["finally", "else", "except", "ensure", "always", "cleanup", "after", "end", "defer", "last"]
+        },
+        {
+          "question": "Quelle fonction convertit une chaîne en entier ?",
+          "reponses": ["int()", "str()", "float()", "parse()", "atoi()", "toInt()", "number()", "digit()", "cast()", "eval()"]
+        },
+        {
+          "question": "Quel module manipule les chemins de fichiers en orienté objet ?",
+          "reponses": ["pathlib", "os.path", "glob", "shutil", "filepath", "pathutils", "fileinput", "tempfile", "io", "sys"]
+        },
+        {
+          "question": "Qu'est-ce qu'un décorateur ?",
+          "reponses": ["une fonction qui en enveloppe une autre", "un commentaire spécial", "un type générique", "une annotation de type", "une classe abstraite", "un alias de module", "une méthode statique", "un gestionnaire de contexte", "une métaclasse", "un itérateur"]
+        },
+        {
+          "question": "Quel mot-clé déclare une classe ?",
+          "reponses": ["class", "struct", "object", "type", "new", "interface", "record", "entity", "model", "blueprint"]
+        },
+        {
+          "question": "Comment nomme-t-on par convention le premier paramètre d'une méthode d'instance ?",
+          "reponses": ["self", "this", "cls", "me", "instance", "obj", "it", "current", "ref", "that"]
+        },
+        {
+          "question": "Quel décorateur définit une méthode liée à la classe plutôt qu'à l'instance ?",
+          "reponses": ["@classmethod", "@staticmethod", "@property", "@abstractmethod", "@classproperty", "@instance", "@bound", "@shared", "@meta", "@type"]
+        },
+        {
+          "question": "Quelle méthode spéciale initialise une instance après sa création ?",
+          "reponses": ["__init__", "__new__", "__create__", "__call__", "__enter__", "__main__", "__start__", "__construct__", "__setup__", "__init_subclass__"]
+        },
+        {
+          "question": "Que renvoie range(5) en Python 3 ?",
+          "reponses": ["un objet range paresseux", "la liste [0, 1, 2, 3, 4]", "un tuple", "un générateur infini", "un itérateur déjà épuisé", "un ensemble", "un tableau NumPy", "une chaîne", "un dictionnaire", "None"]
+        },
+        {
+          "question": "Quel gestionnaire de paquets est livré avec Python ?",
+          "reponses": ["pip", "npm", "conda", "poetry", "apt", "gem", "cargo", "yarn", "brew", "maven"]
+        },
+        {
+          "question": "Quel fichier marque historiquement un dossier comme paquet Python ?",
+          "reponses": ["__init__.py", "__main__.py", "setup.py", "package.py", "module.py", "__package__.py", "index.py", "init.py", "__mod__.py", "pyproject.toml"]
+        },
+        {
+          "question": "Quelle commande crée un environnement virtuel avec la bibliothèque standard ?",
+          "reponses": ["python -m venv", "python -m virtualenv", "pip venv", "python -m env", "conda create", "python -m pipenv", "venv create", "python -m sandbox", "pip install venv", "python -m isolate"]
+        },
+        {
+          "question": "Que signifie l'acronyme PEP ?",
+          "reponses": ["Python Enhancement Proposal", "Python Extension Package", "Python Execution Plan", "Python Editor Protocol", "Public Extension Policy", "Python Environment Path", "Portable Executable Python", "Python Error Protocol", "Package Extension Proposal", "Python Engine Patch"]
+        },
+        {
+          "question": "Quel opérateur teste si deux noms désignent le même objet ?",
+          "reponses": ["is", "==", "equals()", "!=", "in", "id()", "same()", "eq()", "identical()", "isinstance()"]
+        },
+        {
+          "question": "Que produit la fonction enumerate() ?",
+          "reponses": ["des paires (index, élément)", "le nombre d'éléments", "une liste triée", "les numéros de ligne d'un fichier", "un dictionnaire", "les clés énumérées", "une séquence sans doublons", "une séquence inversée", "des groupes par valeur", "un ensemble"]
+        },
+        {
+          "question": "Quelle méthode de chaîne retire les espaces au début et à la fin ?",
+          "reponses": ["strip()", "trim()", "clean()", "cut()", "remove()", "chop()", "truncate()", "squeeze()", "erase()", "prune()"]
+        },
+        {
+          "question": "Quel module de la bibliothèque standard fournit la classe date ?",
+          "reponses": ["datetime", "time", "calendar", "clock", "chrono", "timeit", "dateutil", "arrow", "pendulum", "moment"]
+        },
+        {
+          "question": "Quelle exception est levée par une division par zéro ?",
+          "reponses": ["ZeroDivisionError", "ValueError", "DivideByZeroError", "MathError", "TypeError", "OverflowError", "RuntimeError", "FloatingPointError", "NumericError", "AssertionError"]
+        },
+        {
+          "question": "Quelle exception signale une clé absente d'un dictionnaire ?",
+          "reponses": ["KeyError", "IndexError", "ValueError", "AttributeError", "NameError", "TypeError", "MissingKeyError", "KeyNotFound", "DictError", "LookupFailed"]
+        },
+        {
+          "question": "Quelle exception signale un index hors des bornes d'une liste ?",
+          "reponses": ["IndexError", "KeyError", "ValueError", "RangeError", "OutOfBoundsError", "BoundsError", "OverflowError", "SliceError", "ListError", "PositionError"]
+        },
+        {
+          "question": "Que vaut \"abc\"[::-1] ?",
+          "reponses": ["\"cba\"", "\"abc\"", "\"\"", "\"a\"", "\"c\"", "une erreur de syntaxe", "\"bca\"", "\"acb\"", "None", "\"cab\""]
+        },
+        {
+          "question": "Quel mot-clé transforme une fonction en générateur ?",
+          "reponses": ["yield", "return", "generate", "gen", "produce", "emit", "await", "async", "defer", "stream"]
+        },
+        {
+          "question": "Quelle bibliothèque est la référence du calcul numérique en Python ?",
+          "reponses": ["NumPy", "Pandas", "SciPy", "Matplotlib", "SymPy", "Numba", "Dask", "Polars", "Scikit-learn", "Statsmodels"]
+        },
+        {
+          "question": "Quelle syntaxe déclare une coroutine ?",
+          "reponses": ["async def", "await", "coroutine", "go", "defer", "spawn", "task", "thread", "parallel", "concurrent"]
+        },
+        {
+          "question": "Quel mot-clé attend le résultat d'une coroutine ?",
+          "reponses": ["await", "async", "yield", "wait", "join", "then", "resolve", "get", "block", "sync"]
+        },
+        {
+          "question": "Que fait le GIL de CPython ?",
+          "reponses": ["il empêche deux threads d'exécuter du bytecode Python en même temps", "il compile le code en C", "il libère la mémoire inutilisée", "il isole les modules", "il accélère les boucles", "il verrouille les fichiers ouverts", "il limite la mémoire du processus", "il ordonne les imports", "il met en cache les appels de fonction", "il valide les entrées utilisateur"]
+        },
+        {
+          "question": "Quelle fonction affiche une valeur sur la sortie standard ?",
+          "reponses": ["print()", "echo()", "write()", "console()", "display()", "show()", "out()", "puts()", "log()", "printf()"]
+        },
+        {
+          "question": "Quel opérateur teste l'appartenance à une séquence ?",
+          "reponses": ["in", "is", "has", "contains", "of", "within", "belongs", "at", "find", "exists"]
+        },
+        {
+          "question": "Lequel de ces types est immuable ?",
+          "reponses": ["tuple", "list", "dict", "set", "bytearray", "deque", "array", "OrderedDict", "defaultdict", "Counter"]
+        },
+        {
+          "question": "Quelle syntaxe d'interpolation est apparue avec Python 3.6 ?",
+          "reponses": ["les f-strings", "la concaténation avec +", "printf", "l'opérateur %", "String.format", "les templates string", "le module string", "les heredocs", "les backticks", "interpolate()"]
+        },
+        {
+          "question": "Quelle commande installe un paquet depuis PyPI ?",
+          "reponses": ["pip install", "pip get", "python install", "pip add", "import install", "pip fetch", "pypi install", "pip download", "pip setup", "pip require"]
+        },
+        {
+          "question": "Quel fichier liste traditionnellement les dépendances installées par pip ?",
+          "reponses": ["requirements.txt", "packages.txt", "dependencies.json", "setup.cfg", "Pipfile.lock", "modules.txt", "imports.txt", "python.json", "deps.ini", "libs.txt"]
+        },
+        {
+          "question": "Quel mot-clé supprime une variable ou un élément ?",
+          "reponses": ["del", "delete", "remove", "unset", "drop", "erase", "clear", "discard", "free", "destroy"]
+        },
+        {
+          "question": "Quelle méthode de dictionnaire renvoie une valeur par défaut si la clé manque ?",
+          "reponses": ["get()", "fetch()", "find()", "at()", "lookup()", "pick()", "value()", "read()", "select()", "take()"]
         }
       ]
     },
     {
-      "categorie": "Géographie",
+      "categorie": "Réseau (CCNA)",
       "questions": [
         {
-          "question": "Quelle est la capitale de l'Australie ?",
-          "reponses": ["Canberra", "Sydney", "Melbourne", "Brisbane", "Perth", "Adélaïde", "Darwin", "Hobart", "Auckland", "Wellington"]
+          "question": "Combien de couches compte le modèle OSI ?",
+          "reponses": ["7", "4", "5", "6", "8", "3", "9", "10", "2", "12"]
         },
         {
-          "question": "Quel est le plus long fleuve de France ?",
-          "reponses": ["La Loire", "La Seine", "Le Rhône", "La Garonne", "La Dordogne", "La Somme", "La Charente", "L'Adour", "La Vilaine", "L'Escaut"]
+          "question": "À quelle couche du modèle OSI travaille un routeur ?",
+          "reponses": ["couche 3 (réseau)", "couche 2 (liaison)", "couche 4 (transport)", "couche 1 (physique)", "couche 7 (application)", "couche 5 (session)", "couche 6 (présentation)", "entre les couches 1 et 2", "couche 0", "aucune, il est hors modèle"]
         },
         {
-          "question": "Quel est le plus grand océan du monde ?",
-          "reponses": ["L'océan Pacifique", "L'océan Atlantique", "L'océan Indien", "L'océan Arctique", "L'océan Austral", "La mer Méditerranée", "La mer des Caraïbes", "La mer de Chine méridionale", "La mer d'Arabie", "La mer de Béring"]
+          "question": "À quelle couche OSI travaille un commutateur classique ?",
+          "reponses": ["couche 2 (liaison)", "couche 3 (réseau)", "couche 1 (physique)", "couche 4 (transport)", "couche 7 (application)", "couche 5 (session)", "couche 6 (présentation)", "couche 8", "toutes les couches", "aucune"]
         },
         {
-          "question": "Quel est le plus haut sommet du monde ?",
-          "reponses": ["L'Everest", "Le K2", "Le Kangchenjunga", "Le mont Blanc", "Le Kilimandjaro", "L'Aconcagua", "Le Denali", "Le mont Elbrouz", "Le Lhotse", "Le Makalu"]
+          "question": "Combien de bits compte une adresse IPv4 ?",
+          "reponses": ["32", "64", "128", "16", "48", "256", "24", "8", "96", "512"]
         },
         {
-          "question": "Dans quel pays se trouve la ville de Marrakech ?",
-          "reponses": ["Le Maroc", "L'Algérie", "La Tunisie", "L'Égypte", "La Libye", "La Mauritanie", "Le Sénégal", "Le Mali", "La Jordanie", "Le Liban"]
+          "question": "Combien de bits compte une adresse IPv6 ?",
+          "reponses": ["128", "64", "32", "256", "48", "96", "16", "512", "192", "80"]
         },
         {
-          "question": "Quelle est la capitale du Canada ?",
-          "reponses": ["Ottawa", "Toronto", "Montréal", "Vancouver", "Québec", "Calgary", "Edmonton", "Winnipeg", "Halifax", "Victoria"]
+          "question": "Combien de bits compte une adresse MAC ?",
+          "reponses": ["48", "32", "64", "128", "24", "16", "96", "8", "56", "40"]
         },
         {
-          "question": "Quel est le plus grand désert chaud du monde ?",
-          "reponses": ["Le Sahara", "Le désert de Gobi", "Le Kalahari", "Le désert d'Atacama", "Le Namib", "Le désert de Mojave", "Le désert d'Arabie", "Le désert de Sonora", "Le désert du Thar", "Le Grand Désert de Victoria"]
+          "question": "Quel masque correspond à la notation /24 ?",
+          "reponses": ["255.255.255.0", "255.255.0.0", "255.0.0.0", "255.255.255.128", "255.255.255.192", "255.255.254.0", "255.255.255.255", "255.255.252.0", "255.255.255.240", "0.0.0.255"]
         },
         {
-          "question": "Combien d'États membres compte l'Union européenne depuis le Brexit ?",
-          "reponses": ["27", "28", "25", "26", "30", "24", "29", "15", "32", "20"]
+          "question": "Combien d'adresses utilisables offre un réseau /24 ?",
+          "reponses": ["254", "256", "255", "253", "512", "128", "250", "252", "1024", "64"]
         },
         {
-          "question": "Quel est le plus grand pays du monde par sa superficie ?",
-          "reponses": ["La Russie", "Le Canada", "La Chine", "Les États-Unis", "Le Brésil", "L'Australie", "L'Inde", "L'Argentine", "Le Kazakhstan", "L'Algérie"]
+          "question": "Quel protocole attribue automatiquement une adresse IP à un hôte ?",
+          "reponses": ["DHCP", "DNS", "ARP", "ICMP", "NAT", "BOOTP", "SNMP", "RARP", "LDAP", "NTP"]
         },
         {
-          "question": "Quelle mer borde la ville de Marseille ?",
-          "reponses": ["La mer Méditerranée", "La Manche", "La mer du Nord", "L'océan Atlantique", "La mer Baltique", "La mer Noire", "La mer Rouge", "La mer Adriatique", "La mer Égée", "La mer Tyrrhénienne"]
+          "question": "Quel protocole traduit un nom de domaine en adresse IP ?",
+          "reponses": ["DNS", "DHCP", "ARP", "NAT", "ICMP", "WINS", "LDAP", "SNMP", "NTP", "TFTP"]
         },
         {
-          "question": "Quelle est la capitale du Japon ?",
-          "reponses": ["Tokyo", "Kyoto", "Osaka", "Séoul", "Pékin", "Hiroshima", "Nagoya", "Sapporo", "Yokohama", "Shanghai"]
+          "question": "Quel protocole associe une adresse IP à une adresse MAC sur un réseau local ?",
+          "reponses": ["ARP", "DNS", "DHCP", "ICMP", "RARP", "NDP", "NAT", "STP", "CDP", "LLDP"]
         },
         {
-          "question": "Quel fleuve traverse Paris ?",
-          "reponses": ["La Seine", "La Loire", "Le Rhône", "La Garonne", "Le Rhin", "La Somme", "La Meuse", "La Moselle", "La Dordogne", "Le Danube"]
+          "question": "Quel protocole utilise la commande ping ?",
+          "reponses": ["ICMP", "TCP", "UDP", "ARP", "IGMP", "SNMP", "DNS", "HTTP", "SCTP", "RIP"]
+        },
+        {
+          "question": "Quel protocole de transport garantit la livraison des segments ?",
+          "reponses": ["TCP", "UDP", "IP", "ICMP", "ARP", "RTP", "SCTP", "IPX", "GRE", "ESP"]
+        },
+        {
+          "question": "Quel port par défaut utilise HTTPS ?",
+          "reponses": ["443", "80", "8080", "22", "21", "25", "53", "3389", "8443", "143"]
+        },
+        {
+          "question": "Quel port par défaut utilise SSH ?",
+          "reponses": ["22", "23", "21", "80", "443", "3389", "25", "161", "69", "110"]
+        },
+        {
+          "question": "Quel port par défaut utilise Telnet ?",
+          "reponses": ["23", "22", "21", "25", "80", "110", "143", "53", "69", "161"]
+        },
+        {
+          "question": "Quel port par défaut utilise FTP pour les commandes ?",
+          "reponses": ["21", "20", "22", "23", "69", "80", "115", "990", "989", "25"]
+        },
+        {
+          "question": "Quel port par défaut utilise DNS ?",
+          "reponses": ["53", "54", "43", "63", "80", "123", "161", "389", "88", "137"]
+        },
+        {
+          "question": "Quelle plage d'adresses privées correspond à la classe A ?",
+          "reponses": ["10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16", "169.254.0.0/16", "127.0.0.0/8", "224.0.0.0/4", "100.64.0.0/10", "198.18.0.0/15", "192.0.2.0/24", "203.0.113.0/24"]
+        },
+        {
+          "question": "Quelle adresse est réservée au bouclage local ?",
+          "reponses": ["127.0.0.1", "192.168.0.1", "10.0.0.1", "0.0.0.0", "255.255.255.255", "169.254.0.1", "172.16.0.1", "224.0.0.1", "8.8.8.8", "1.1.1.1"]
+        },
+        {
+          "question": "Que fait le NAT ?",
+          "reponses": ["il traduit des adresses privées en adresse publique", "il chiffre le trafic", "il attribue des adresses IP", "il résout les noms de domaine", "il segmente le réseau en VLAN", "il route entre VLAN", "il compresse les paquets", "il filtre les ports", "il duplique le trafic", "il équilibre la charge"]
+        },
+        {
+          "question": "À quoi sert un VLAN ?",
+          "reponses": ["à segmenter logiquement un réseau commuté", "à chiffrer les trames", "à accélérer le routage", "à attribuer des adresses IP", "à relier deux sites distants", "à compresser le trafic", "à sauvegarder la configuration", "à détecter les intrusions", "à agréger des liens physiques", "à synchroniser les horloges"]
+        },
+        {
+          "question": "Quel protocole évite les boucles de commutation ?",
+          "reponses": ["STP", "OSPF", "RIP", "EIGRP", "VTP", "BGP", "HSRP", "LACP", "CDP", "ARP"]
+        },
+        {
+          "question": "Quel est le VLAN par défaut sur un commutateur Cisco ?",
+          "reponses": ["VLAN 1", "VLAN 0", "VLAN 10", "VLAN 99", "VLAN 100", "VLAN 1002", "VLAN 4094", "VLAN 2", "VLAN 5", "aucun"]
+        },
+        {
+          "question": "Quel protocole transporte plusieurs VLAN sur un seul lien ?",
+          "reponses": ["802.1Q", "802.11", "802.3", "802.1X", "802.1D", "802.3ad", "802.1s", "802.1w", "802.15", "802.16"]
+        },
+        {
+          "question": "Quel protocole de routage est un protocole à état de liens ?",
+          "reponses": ["OSPF", "RIP", "BGP", "EIGRP", "IGRP", "RIPv2", "STP", "VTP", "HSRP", "GLBP"]
+        },
+        {
+          "question": "Quelle métrique RIP utilise-t-il ?",
+          "reponses": ["le nombre de sauts", "la bande passante", "le délai", "la charge", "la fiabilité", "le coût administratif", "le MTU", "la latence", "le nombre de routeurs voisins", "la gigue"]
+        },
+        {
+          "question": "Quel est le nombre maximal de sauts admis par RIP ?",
+          "reponses": ["15", "16", "255", "30", "10", "100", "24", "64", "8", "illimité"]
+        },
+        {
+          "question": "Quel protocole de routage est utilisé entre systèmes autonomes sur Internet ?",
+          "reponses": ["BGP", "OSPF", "RIP", "EIGRP", "IS-IS", "IGRP", "ODR", "STP", "VRRP", "LDP"]
+        },
+        {
+          "question": "Quelle commande Cisco affiche la table de routage ?",
+          "reponses": ["show ip route", "show route", "show ip interface", "show running-config", "display route", "show routing", "show ip arp", "show cdp neighbors", "show ip protocols", "show version"]
+        },
+        {
+          "question": "Quelle commande Cisco passe en mode de configuration globale ?",
+          "reponses": ["configure terminal", "enable", "config mode", "global config", "conf global", "setup", "terminal configure", "mode config", "config system", "write terminal"]
+        },
+        {
+          "question": "Quelle commande Cisco sauvegarde la configuration en mémoire non volatile ?",
+          "reponses": ["copy running-config startup-config", "save config", "write config", "copy startup-config running-config", "save running", "commit", "store config", "backup config", "copy nvram flash", "reload save"]
+        },
+        {
+          "question": "Quel type de câble relie deux équipements de même nature sans auto-MDIX ?",
+          "reponses": ["un câble croisé", "un câble droit", "un câble console", "un câble coaxial", "un câble série", "une fibre monomode", "un câble USB", "un câble téléphonique", "un câble d'alimentation", "un câble plat"]
+        },
+        {
+          "question": "Combien de paires compte un câble Ethernet à paires torsadées ?",
+          "reponses": ["4", "2", "8", "1", "6", "3", "5", "12", "16", "10"]
+        },
+        {
+          "question": "Quelle topologie relie chaque hôte à un équipement central ?",
+          "reponses": ["l'étoile", "l'anneau", "le bus", "le maillage", "l'arbre", "le point à point", "l'hybride", "la chaîne", "la grille", "le cercle"]
+        },
+        {
+          "question": "Que signifie MTU ?",
+          "reponses": ["Maximum Transmission Unit", "Multiple Transfer Unit", "Media Transport Unit", "Main Transmission Unit", "Maximum Traffic Usage", "Managed Transfer Utility", "Multicast Transmission Unit", "Minimum Transfer Unit", "Media Type Unit", "Maximum Throughput Unit"]
+        },
+        {
+          "question": "Quelle est la taille standard du MTU sur Ethernet ?",
+          "reponses": ["1500 octets", "1000 octets", "9000 octets", "512 octets", "2048 octets", "576 octets", "1492 octets", "4096 octets", "64 octets", "256 octets"]
+        },
+        {
+          "question": "Quel équipement diffuse chaque trame reçue sur tous ses ports ?",
+          "reponses": ["le concentrateur (hub)", "le commutateur", "le routeur", "le pare-feu", "le pont", "la passerelle", "le répartiteur optique", "le modem", "le point d'accès", "le serveur"]
+        },
+        {
+          "question": "Que définit un domaine de collision ?",
+          "reponses": ["la zone où deux trames peuvent entrer en collision", "la zone où une diffusion est propagée", "l'ensemble d'un VLAN", "la portée d'un routeur", "le périmètre d'un sous-réseau", "la zone couverte par un point d'accès", "l'étendue d'un système autonome", "le champ d'action du protocole STP", "la table ARP d'un hôte", "le domaine de nommage DNS"]
+        },
+        {
+          "question": "Quel équipement sépare les domaines de diffusion ?",
+          "reponses": ["le routeur", "le concentrateur", "le commutateur", "le répéteur", "le pont", "le câble croisé", "le modem", "le transceiver", "le patch panel", "la prise murale"]
+        },
+        {
+          "question": "Quelle norme désigne le Wi-Fi 6 ?",
+          "reponses": ["802.11ax", "802.11ac", "802.11n", "802.11g", "802.11b", "802.11a", "802.11be", "802.11ah", "802.11ad", "802.11af"]
+        },
+        {
+          "question": "Quelle bande de fréquences le 802.11b utilise-t-il ?",
+          "reponses": ["2,4 GHz", "5 GHz", "6 GHz", "900 MHz", "60 GHz", "1,8 GHz", "3,5 GHz", "11 GHz", "24 GHz", "433 MHz"]
+        },
+        {
+          "question": "Quelle commande teste le chemin suivi par un paquet jusqu'à une destination ?",
+          "reponses": ["traceroute", "ping", "netstat", "arp", "nslookup", "ipconfig", "route print", "telnet", "tracepath -p", "pathping -q"]
+        },
+        {
+          "question": "Quel champ de l'en-tête IP évite qu'un paquet circule indéfiniment ?",
+          "reponses": ["le TTL", "le checksum", "le protocole", "le ToS", "le flag DF", "l'identifiant", "l'offset", "la version", "l'IHL", "la longueur totale"]
+        },
+        {
+          "question": "Combien de ports TCP et UDP existent au total ?",
+          "reponses": ["65 536", "1024", "32 768", "4096", "255", "16 384", "131 072", "8192", "512", "1 048 576"]
+        },
+        {
+          "question": "Quelle plage regroupe les ports dits « bien connus » ?",
+          "reponses": ["0 à 1023", "1024 à 49151", "49152 à 65535", "0 à 255", "1 à 512", "1024 à 65535", "0 à 4095", "256 à 1023", "1 à 100", "8000 à 9000"]
+        },
+        {
+          "question": "Que signifie le sigle CSMA/CD ?",
+          "reponses": ["Carrier Sense Multiple Access with Collision Detection", "Carrier Sense Multiple Access with Collision Avoidance", "Channel Sharing Multiple Access with Collision Detection", "Carrier Signal Media Access Control Detection", "Collision Sense Media Access Control Domain", "Carrier Sense Managed Access Control Device", "Channel Select Multiple Access Control Data", "Carrier Switch Multiple Access Collision Delay", "Common Signal Multiple Access Detection", "Carrier Sense Multicast Access Collision Domain"]
+        },
+        {
+          "question": "Quel mécanisme Ethernet permet d'agréger plusieurs liens physiques ?",
+          "reponses": ["EtherChannel", "STP", "VTP", "HSRP", "NAT", "VLAN trunking", "PortFast", "BPDU Guard", "Root Guard", "UDLD"]
+        },
+        {
+          "question": "Quelle commande Cisco affiche les voisins directement connectés ?",
+          "reponses": ["show cdp neighbors", "show ip route", "show interfaces", "show vlan brief", "show arp", "show mac address-table", "show neighbors", "show lldp all", "show ip protocols", "show hosts"]
+        },
+        {
+          "question": "Quelle distance administrative Cisco attribue-t-il par défaut à une route statique ?",
+          "reponses": ["1", "0", "5", "90", "110", "120", "100", "170", "200", "255"]
         }
       ]
     },
     {
-      "categorie": "Sciences",
+      "categorie": "Tailwind CSS",
       "questions": [
         {
-          "question": "Quel est le symbole chimique de l'or ?",
-          "reponses": ["Au", "Ag", "Or", "Fe", "Pb", "Cu", "Go", "Hg", "Pt", "Zn"]
+          "question": "Quelle approche Tailwind CSS revendique-t-il ?",
+          "reponses": ["utility-first", "component-first", "semantic-first", "BEM", "atomic design", "CSS-in-JS", "mobile-only", "OOCSS", "SMACSS", "inline-only"]
         },
         {
-          "question": "Quelle planète est la plus proche du Soleil ?",
-          "reponses": ["Mercure", "Vénus", "La Terre", "Mars", "Jupiter", "Saturne", "Uranus", "Neptune", "Pluton", "La Lune"]
+          "question": "Quelle classe met un texte en gras ?",
+          "reponses": ["font-bold", "text-bold", "font-weight-bold", "bold", "fw-bold", "text-strong", "font-700", "weight-bold", "strong", "b-text"]
         },
         {
-          "question": "Combien d'os compte le squelette d'un adulte humain ?",
-          "reponses": ["206", "196", "212", "250", "180", "300", "226", "150", "108", "186"]
+          "question": "Quelle classe centre le texte ?",
+          "reponses": ["text-center", "align-center", "center-text", "text-middle", "justify-center", "content-center", "txt-center", "text-align-center", "middle", "ta-center"]
         },
         {
-          "question": "Quelle est la formule chimique de l'eau ?",
-          "reponses": ["H2O", "CO2", "H2O2", "O2", "HO", "H3O", "NaCl", "CH4", "NH3", "H2"]
+          "question": "Quelle classe active Flexbox sur un élément ?",
+          "reponses": ["flex", "display-flex", "d-flex", "is-flex", "flexbox", "layout-flex", "box-flex", "flex-on", "use-flex", "flex-display"]
         },
         {
-          "question": "Quel scientifique a formulé la théorie de la relativité générale ?",
-          "reponses": ["Albert Einstein", "Isaac Newton", "Galilée", "Niels Bohr", "Max Planck", "Stephen Hawking", "Nikola Tesla", "Marie Curie", "Charles Darwin", "Louis Pasteur"]
+          "question": "Quelle classe active CSS Grid ?",
+          "reponses": ["grid", "display-grid", "d-grid", "is-grid", "grid-on", "layout-grid", "box-grid", "use-grid", "grid-display", "css-grid"]
         },
         {
-          "question": "Quelle est la vitesse approximative de la lumière dans le vide ?",
-          "reponses": ["300 000 km/s", "30 000 km/s", "3 000 km/s", "150 000 km/s", "1 000 000 km/s", "340 m/s", "3 000 000 km/s", "30 km/s", "100 000 km/s", "500 000 km/s"]
+          "question": "Quelle classe centre le contenu d'un conteneur flex sur l'axe principal ?",
+          "reponses": ["justify-center", "items-center", "content-center", "align-center", "self-center", "place-center", "text-center", "center-main", "main-center", "flex-center"]
         },
         {
-          "question": "Quel organe du corps humain produit l'insuline ?",
-          "reponses": ["Le pancréas", "Le foie", "Les reins", "L'estomac", "La rate", "Le cœur", "La thyroïde", "Les poumons", "La vésicule biliaire", "L'intestin grêle"]
+          "question": "Quelle classe centre le contenu d'un conteneur flex sur l'axe transversal ?",
+          "reponses": ["items-center", "justify-center", "content-between", "self-end", "place-items", "align-middle", "cross-center", "center-cross", "flex-middle", "axis-center"]
         },
         {
-          "question": "Quel gaz les plantes absorbent-elles pour réaliser la photosynthèse ?",
-          "reponses": ["Le dioxyde de carbone", "L'oxygène", "L'azote", "L'hydrogène", "L'hélium", "Le méthane", "L'argon", "L'ozone", "Le monoxyde de carbone", "Le néon"]
+          "question": "Quelle classe donne une largeur de 100 % ?",
+          "reponses": ["w-full", "w-100", "width-full", "w-all", "full-w", "w-max", "w-total", "w-1", "w-100%", "w-auto"]
         },
         {
-          "question": "Qui a mis au point le premier vaccin contre la rage ?",
-          "reponses": ["Louis Pasteur", "Edward Jenner", "Robert Koch", "Alexander Fleming", "Marie Curie", "Claude Bernard", "Albert Calmette", "Jonas Salk", "Ignace Semmelweis", "Hippocrate"]
+          "question": "Quelle classe donne une hauteur égale à celle de l'écran ?",
+          "reponses": ["h-screen", "h-full", "h-100vh", "h-viewport", "h-window", "h-display", "screen-h", "h-max", "h-device", "h-page"]
         },
         {
-          "question": "Quelle est la plus grande planète du système solaire ?",
-          "reponses": ["Jupiter", "Saturne", "Neptune", "Uranus", "La Terre", "Mars", "Vénus", "Mercure", "Pluton", "Le Soleil"]
+          "question": "À combien de pixels correspond l'unité d'espacement 4 par défaut ?",
+          "reponses": ["16 px", "4 px", "8 px", "12 px", "20 px", "24 px", "32 px", "2 px", "40 px", "1 px"]
         },
         {
-          "question": "À quelle température l'eau bout-elle au niveau de la mer ?",
-          "reponses": ["100 °C", "90 °C", "80 °C", "120 °C", "50 °C", "70 °C", "0 °C", "110 °C", "150 °C", "37 °C"]
+          "question": "Que fait la classe p-4 ?",
+          "reponses": ["une marge intérieure sur les quatre côtés", "une marge extérieure sur les quatre côtés", "une marge intérieure en haut seulement", "une bordure de 4 pixels", "une marge intérieure horizontale", "une marge intérieure verticale", "un décalage de position", "une largeur de 4 unités", "un espacement entre enfants", "une marge intérieure à gauche"]
         },
         {
-          "question": "Combien de chromosomes possède une cellule humaine normale (hors gamètes) ?",
-          "reponses": ["46", "23", "44", "48", "42", "22", "50", "24", "36", "64"]
+          "question": "Que fait la classe mx-auto ?",
+          "reponses": ["elle centre l'élément horizontalement", "elle centre l'élément verticalement", "elle supprime les marges", "elle ajoute une marge intérieure automatique", "elle étire l'élément", "elle aligne le texte au centre", "elle fixe la largeur maximale", "elle empile les enfants", "elle active le défilement", "elle masque le débordement"]
+        },
+        {
+          "question": "Quel préfixe applique un style au survol ?",
+          "reponses": ["hover:", "on-hover:", "mouse:", "over:", "h:", "hov:", ":hover", "state-hover:", "pointer:", "active:"]
+        },
+        {
+          "question": "Quel préfixe applique un style quand l'élément a le focus ?",
+          "reponses": ["focus:", "focused:", "on-focus:", "f:", ":focus", "active:", "select:", "tab:", "input:", "ring:"]
+        },
+        {
+          "question": "Quel préfixe cible le mode sombre ?",
+          "reponses": ["dark:", "night:", "theme-dark:", "black:", "mode-dark:", "d:", "dk:", "scheme-dark:", "inverted:", "shade:"]
+        },
+        {
+          "question": "Comment Tailwind gère-t-il le responsive par défaut ?",
+          "reponses": ["mobile-first : les préfixes s'appliquent à partir d'une largeur", "desktop-first : les préfixes s'appliquent en dessous d'une largeur", "par media queries écrites à la main", "par conteneur uniquement", "il ne gère pas le responsive", "par orientation d'écran seulement", "par densité de pixels", "par type d'appareil détecté", "par pourcentage de viewport", "par classes numérotées"]
+        },
+        {
+          "question": "À quelle largeur minimale correspond le préfixe md: par défaut ?",
+          "reponses": ["768 px", "640 px", "1024 px", "1280 px", "480 px", "960 px", "512 px", "1536 px", "320 px", "800 px"]
+        },
+        {
+          "question": "À quelle largeur minimale correspond le préfixe sm: par défaut ?",
+          "reponses": ["640 px", "768 px", "480 px", "576 px", "320 px", "1024 px", "600 px", "512 px", "360 px", "720 px"]
+        },
+        {
+          "question": "À quelle largeur minimale correspond le préfixe lg: par défaut ?",
+          "reponses": ["1024 px", "1280 px", "768 px", "1536 px", "960 px", "1200 px", "896 px", "1440 px", "800 px", "1152 px"]
+        },
+        {
+          "question": "Quelle classe arrondit complètement les angles en cercle ou pilule ?",
+          "reponses": ["rounded-full", "rounded-max", "rounded-circle", "rounded-100", "radius-full", "border-round", "rounded-all", "circle", "pill", "rounded-xl"]
+        },
+        {
+          "question": "Quelle classe applique une bordure de 1 pixel ?",
+          "reponses": ["border", "border-1", "b-1", "outline-1", "stroke-1", "border-thin", "bd-1", "border-px", "edge-1", "line-1"]
+        },
+        {
+          "question": "Quelle classe masque complètement un élément ?",
+          "reponses": ["hidden", "invisible", "display-none", "d-none", "hide", "none", "collapse", "opacity-0", "sr-only", "gone"]
+        },
+        {
+          "question": "Quelle classe rend un élément invisible tout en conservant sa place ?",
+          "reponses": ["invisible", "hidden", "opacity-100", "display-none", "transparent", "collapse", "ghost", "blank", "void", "clear"]
+        },
+        {
+          "question": "Quelle classe met le texte en blanc ?",
+          "reponses": ["text-white", "color-white", "text-light", "white", "txt-white", "fg-white", "font-white", "c-white", "text-fff", "ink-white"]
+        },
+        {
+          "question": "Quelle classe donne un fond bleu de teinte moyenne ?",
+          "reponses": ["bg-blue-500", "background-blue", "bg-blue", "blue-bg", "bg-color-blue", "fill-blue-500", "bg-b-500", "color-bg-blue", "back-blue", "bgc-blue"]
+        },
+        {
+          "question": "Quelle échelle de teintes Tailwind utilise-t-il par défaut pour ses couleurs ?",
+          "reponses": ["de 50 à 950", "de 1 à 10", "de 100 à 900 seulement", "de 0 à 100", "clair / moyen / foncé", "de A à E", "de 1 à 5", "de 0 à 255", "de 10 en 10 jusqu'à 100", "aucune, les couleurs sont libres"]
+        },
+        {
+          "question": "Quelle directive injecte les styles de base de Tailwind ?",
+          "reponses": ["@tailwind base", "@import tailwind", "@use tailwind", "@tailwind reset", "@include base", "@apply base", "@tailwind core", "@base", "@tailwind init", "@layer tailwind"]
+        },
+        {
+          "question": "Quelle directive réutilise des classes Tailwind dans une règle CSS ?",
+          "reponses": ["@apply", "@extend", "@use", "@include", "@mixin", "@compose", "@inherit", "@import", "@tailwind", "@merge"]
+        },
+        {
+          "question": "Quelle directive déclare des styles dans une couche Tailwind ?",
+          "reponses": ["@layer", "@tailwind", "@apply", "@scope", "@group", "@section", "@block", "@level", "@stack", "@tier"]
+        },
+        {
+          "question": "Quel fichier configure Tailwind en version 3 ?",
+          "reponses": ["tailwind.config.js", "tailwind.json", "config.tailwind.js", "tw.config.js", "tailwindrc.js", "tailwind.setup.js", ".tailwindrc", "styles.config.js", "postcss.tailwind.js", "tailwind.options.js"]
+        },
+        {
+          "question": "Quelle clé de configuration ajoute des valeurs sans écraser celles par défaut ?",
+          "reponses": ["theme.extend", "theme.override", "theme.add", "theme.merge", "theme.custom", "extend.theme", "config.extend", "theme.plus", "theme.append", "theme.new"]
+        },
+        {
+          "question": "À quoi sert la clé content du fichier de configuration ?",
+          "reponses": ["à indiquer où chercher les classes utilisées", "à définir le contenu par défaut", "à lister les couleurs", "à charger les polices", "à configurer les plugins", "à définir les points de rupture", "à préciser le dossier de sortie", "à activer le mode sombre", "à choisir le préprocesseur", "à nommer le projet"]
+        },
+        {
+          "question": "Que fait Tailwind avec les classes absentes du contenu analysé ?",
+          "reponses": ["il ne les génère pas dans le CSS final", "il les génère quand même", "il lève une erreur de compilation", "il les met en commentaire", "il les remplace par des styles vides", "il les charge à la demande", "il les déplace dans un second fichier", "il les minifie séparément", "il les signale en avertissement", "il les convertit en variables CSS"]
+        },
+        {
+          "question": "Comment écrit-on une valeur arbitraire pour une largeur ?",
+          "reponses": ["w-[37px]", "w-{37px}", "w-(37px)", "w:37px", "w-custom-37", "w-37px", "w-arbitrary-37", "w=[37px]", "w--37px", "w-val-37"]
+        },
+        {
+          "question": "Quelle classe fixe l'espace entre les éléments d'une grille ou d'un flex ?",
+          "reponses": ["gap-4", "space-4", "margin-4", "gutter-4", "sep-4", "between-4", "spacing-4", "pad-4", "dist-4", "inter-4"]
+        },
+        {
+          "question": "Quelle classe positionne un élément en absolu ?",
+          "reponses": ["absolute", "position-absolute", "pos-absolute", "abs", "is-absolute", "layout-absolute", "fixed-absolute", "place-absolute", "absolute-pos", "a-pos"]
+        },
+        {
+          "question": "Quelle classe place un élément au-dessus des autres ?",
+          "reponses": ["z-10", "layer-10", "index-10", "depth-10", "front-10", "stack-10", "z-index-10", "above-10", "top-10", "order-10"]
+        },
+        {
+          "question": "Quelle classe applique une ombre portée moyenne ?",
+          "reponses": ["shadow-md", "shadow-medium", "box-shadow-md", "drop-md", "elevation-2", "shadow-2", "md-shadow", "shade-md", "shadow-normal", "shadow-base"]
+        },
+        {
+          "question": "Quelle classe fait passer un conteneur flex en colonne ?",
+          "reponses": ["flex-col", "flex-column", "flex-vertical", "direction-col", "col", "flex-dir-col", "flex-y", "vertical", "stack", "flex-down"]
+        },
+        {
+          "question": "Quelle classe autorise le retour à la ligne des éléments flex ?",
+          "reponses": ["flex-wrap", "wrap", "flex-break", "flex-multi", "wrap-flex", "flex-line", "flex-newline", "flex-overflow", "flex-fold", "break-flex"]
+        },
+        {
+          "question": "Quelle classe crée une grille de trois colonnes égales ?",
+          "reponses": ["grid-cols-3", "grid-3", "cols-3", "columns-3", "grid-template-3", "col-3", "grid-col-3", "g-cols-3", "three-cols", "grid-x-3"]
+        },
+        {
+          "question": "Quelle classe fait occuper deux colonnes à un élément de grille ?",
+          "reponses": ["col-span-2", "col-2", "span-2", "grid-span-2", "colspan-2", "width-2", "cols-2", "span-col-2", "grid-col-2", "x-span-2"]
+        },
+        {
+          "question": "Quelle classe ajoute une transition sur toutes les propriétés ?",
+          "reponses": ["transition-all", "transition", "animate-all", "transition-full", "all-transition", "ease-all", "trans-all", "motion-all", "smooth-all", "tw-transition"]
+        },
+        {
+          "question": "Quelle classe applique une animation de rotation continue ?",
+          "reponses": ["animate-spin", "animate-rotate", "spin", "rotate-loop", "animate-turn", "loop-spin", "animate-circle", "rotating", "spin-infinite", "motion-spin"]
+        },
+        {
+          "question": "Quel outil officiel trie et fusionne les classes dans Prettier ?",
+          "reponses": ["prettier-plugin-tailwindcss", "tailwind-sort", "eslint-plugin-tailwind", "tw-prettier", "tailwind-formatter", "prettier-tailwind", "classnames-sort", "tw-organize", "tailwind-lint", "postcss-tailwind-sort"]
+        },
+        {
+          "question": "Quel plugin officiel stylise les contenus rédactionnels ?",
+          "reponses": ["@tailwindcss/typography", "@tailwindcss/prose", "@tailwindcss/text", "@tailwindcss/article", "@tailwindcss/content", "@tailwindcss/rich", "@tailwindcss/editor", "@tailwindcss/markdown", "@tailwindcss/docs", "@tailwindcss/readable"]
+        },
+        {
+          "question": "Quelle classe ce plugin ajoute-t-il aux blocs de texte ?",
+          "reponses": ["prose", "typography", "article", "rich-text", "content", "readable", "text-block", "editorial", "copy", "markdown"]
+        },
+        {
+          "question": "Quel plugin officiel stylise les champs de formulaire ?",
+          "reponses": ["@tailwindcss/forms", "@tailwindcss/inputs", "@tailwindcss/fields", "@tailwindcss/controls", "@tailwindcss/ui", "@tailwindcss/elements", "@tailwindcss/widgets", "@tailwindcss/interact", "@tailwindcss/entry", "@tailwindcss/validate"]
+        },
+        {
+          "question": "Quelle est la principale nouveauté de Tailwind CSS v4 ?",
+          "reponses": ["la configuration se fait en CSS plutôt qu'en JavaScript", "l'abandon des classes utilitaires", "le passage obligatoire à Sass", "la suppression du mode sombre", "l'abandon du responsive", "le rendu côté serveur intégré", "la compilation en WebAssembly", "la suppression des plugins", "l'abandon de PostCSS au profit de Less", "la fusion avec Bootstrap"]
+        },
+        {
+          "question": "Quelle classe tronque un texte trop long avec des points de suspension ?",
+          "reponses": ["truncate", "text-ellipsis-only", "overflow-dots", "text-cut", "clip-text", "text-truncate-1", "ellipsis", "line-cut", "text-shorten", "crop-text"]
         }
       ]
     },
     {
-      "categorie": "Arts et Littérature",
+      "categorie": "Cybersécurité",
       "questions": [
         {
-          "question": "Qui a peint La Joconde ?",
-          "reponses": ["Léonard de Vinci", "Michel-Ange", "Raphaël", "Botticelli", "Titien", "Rembrandt", "Vermeer", "Caravage", "Pablo Picasso", "Claude Monet"]
+          "question": "Que désigne le triptyque CIA en sécurité ?",
+          "reponses": ["Confidentialité, Intégrité, Disponibilité", "Contrôle, Identité, Accès", "Chiffrement, Intégrité, Authentification", "Confidentialité, Identité, Autorisation", "Conformité, Intégrité, Audit", "Contrôle, Inspection, Alerte", "Chiffrement, Isolation, Anonymat", "Confiance, Intégrité, Accès", "Cloisonnement, Identification, Authentification", "Certification, Inspection, Assurance"]
         },
         {
-          "question": "Qui a écrit Les Misérables ?",
-          "reponses": ["Victor Hugo", "Émile Zola", "Honoré de Balzac", "Gustave Flaubert", "Alexandre Dumas", "Stendhal", "Guy de Maupassant", "Jules Verne", "Charles Baudelaire", "Molière"]
+          "question": "Qu'est-ce que le hameçonnage (phishing) ?",
+          "reponses": ["une usurpation d'identité pour soutirer des informations", "une saturation de serveur", "une injection de code SQL", "un chiffrement des fichiers contre rançon", "une écoute du trafic réseau", "une élévation de privilèges", "un débordement de tampon", "un détournement de session", "une attaque par force brute", "une falsification d'adresse MAC"]
         },
         {
-          "question": "Quel peintre s'est coupé une partie de l'oreille en 1888 ?",
-          "reponses": ["Vincent van Gogh", "Paul Gauguin", "Claude Monet", "Paul Cézanne", "Salvador Dalí", "Pablo Picasso", "Auguste Renoir", "Edgar Degas", "Henri Matisse", "Henri de Toulouse-Lautrec"]
+          "question": "Que fait un rançongiciel (ransomware) ?",
+          "reponses": ["il chiffre les données et réclame une rançon", "il espionne les frappes clavier", "il sature la bande passante", "il ouvre une porte dérobée discrète", "il mine de la cryptomonnaie", "il efface le disque sans contrepartie", "il redirige le trafic DNS", "il vole les cookies de session", "il désactive l'antivirus uniquement", "il duplique les fichiers"]
         },
         {
-          "question": "Qui a écrit Le Petit Prince ?",
-          "reponses": ["Antoine de Saint-Exupéry", "Jules Verne", "Albert Camus", "Marcel Pagnol", "Jean de La Fontaine", "Charles Perrault", "Victor Hugo", "Jacques Prévert", "Alexandre Dumas", "Marcel Proust"]
+          "question": "Qu'est-ce qu'une attaque par déni de service distribué ?",
+          "reponses": ["la saturation d'un service depuis de nombreuses machines", "le vol d'identifiants en masse", "l'injection de requêtes SQL", "l'interception du trafic chiffré", "la modification du DNS local", "l'exécution de code à distance", "le chiffrement de sauvegardes", "la compromission d'un certificat", "le balayage de ports", "l'escalade de privilèges locale"]
         },
         {
-          "question": "Quel compositeur a écrit l'opéra La Flûte enchantée ?",
-          "reponses": ["Wolfgang Amadeus Mozart", "Ludwig van Beethoven", "Jean-Sébastien Bach", "Antonio Vivaldi", "Frédéric Chopin", "Giuseppe Verdi", "Richard Wagner", "Joseph Haydn", "Franz Schubert", "Piotr Ilitch Tchaïkovski"]
+          "question": "Qu'est-ce qu'une injection SQL ?",
+          "reponses": ["l'insertion de code SQL via une entrée non filtrée", "l'ajout d'un index à une table", "le vol d'un fichier de base de données", "la saturation d'un serveur de base", "le chiffrement d'une base", "la duplication d'un enregistrement", "l'écoute des requêtes réseau", "l'usurpation d'un compte administrateur", "la corruption d'un fichier journal", "l'exécution d'une sauvegarde non autorisée"]
         },
         {
-          "question": "Quel dramaturge a écrit Roméo et Juliette ?",
-          "reponses": ["William Shakespeare", "Molière", "Jean Racine", "Pierre Corneille", "Goethe", "Oscar Wilde", "Victor Hugo", "Christopher Marlowe", "Beaumarchais", "Anton Tchekhov"]
+          "question": "Que désigne une faille XSS ?",
+          "reponses": ["l'exécution de script injecté dans une page vue par d'autres", "l'accès direct au système de fichiers", "l'interception de paquets réseau", "le débordement d'un tampon mémoire", "la falsification d'une requête inter-site", "l'élévation de privilèges système", "le vol de clés de chiffrement", "la saturation d'une base de données", "l'usurpation d'une adresse IP", "la compromission d'un certificat TLS"]
         },
         {
-          "question": "Quel peintre a réalisé le tableau « Impression, soleil levant » ?",
-          "reponses": ["Claude Monet", "Édouard Manet", "Auguste Renoir", "Edgar Degas", "Paul Cézanne", "Vincent van Gogh", "Gustave Courbet", "Eugène Delacroix", "Paul Gauguin", "Georges Seurat"]
+          "question": "Que signifie l'acronyme CSRF ?",
+          "reponses": ["Cross-Site Request Forgery", "Cross-Site Resource Filtering", "Client-Side Request Forwarding", "Cross-Server Resource Federation", "Certified Secure Request Format", "Cross-Site Response Framing", "Client Session Replay Forgery", "Content Security Resource Filter", "Cross-Stack Remote Function", "Common Site Request Failure"]
         },
         {
-          "question": "Quel auteur français a écrit la fable « Le Corbeau et le Renard » ?",
-          "reponses": ["Jean de La Fontaine", "Charles Perrault", "Molière", "Jean Racine", "Nicolas Boileau", "François Rabelais", "Voltaire", "Michel de Montaigne", "Jean-Jacques Rousseau", "Pierre Corneille"]
+          "question": "Quel principe consiste à n'accorder que les droits strictement nécessaires ?",
+          "reponses": ["le moindre privilège", "la défense en profondeur", "le besoin d'en connaître", "la séparation des tâches", "le cloisonnement réseau", "la redondance", "la non-répudiation", "la traçabilité", "l'anonymisation", "la tolérance aux pannes"]
         },
         {
-          "question": "Quel artiste espagnol a peint Guernica ?",
-          "reponses": ["Pablo Picasso", "Salvador Dalí", "Joan Miró", "Francisco de Goya", "Diego Velázquez", "Le Greco", "Antoni Gaudí", "Bartolomé Murillo", "Joaquín Sorolla", "Juan Gris"]
+          "question": "Que désigne la défense en profondeur ?",
+          "reponses": ["l'empilement de plusieurs couches de protection indépendantes", "le chiffrement des disques uniquement", "la surveillance permanente du réseau", "la sauvegarde hors site", "l'authentification à deux facteurs", "le cloisonnement des comptes administrateurs", "le test d'intrusion régulier", "la formation des utilisateurs", "la mise à jour automatique", "l'isolation physique des serveurs"]
         },
         {
-          "question": "Quel compositeur a écrit la symphonie dont est tiré l'« Hymne à la joie » ?",
-          "reponses": ["Ludwig van Beethoven", "Wolfgang Amadeus Mozart", "Jean-Sébastien Bach", "Joseph Haydn", "Johannes Brahms", "Franz Schubert", "Gustav Mahler", "Antonín Dvořák", "Frédéric Chopin", "Franz Liszt"]
+          "question": "Qu'est-ce que l'authentification à deux facteurs ?",
+          "reponses": ["la combinaison de deux preuves de nature différente", "deux mots de passe successifs", "un mot de passe de plus de deux mots", "la double vérification de l'adresse IP", "deux certificats sur la même machine", "la validation par deux administrateurs", "un compte dupliqué", "deux sessions simultanées", "un chiffrement appliqué deux fois", "deux pare-feux en série"]
         },
         {
-          "question": "Quel écrivain a créé le personnage de Sherlock Holmes ?",
-          "reponses": ["Arthur Conan Doyle", "Agatha Christie", "Maurice Leblanc", "Edgar Allan Poe", "Charles Dickens", "Georges Simenon", "Jules Verne", "H. G. Wells", "Oscar Wilde", "Gaston Leroux"]
+          "question": "Lequel de ces algorithmes est une fonction de hachage ?",
+          "reponses": ["SHA-256", "AES", "RSA", "ChaCha20", "Diffie-Hellman", "ECDH", "3DES", "Blowfish", "Twofish", "Serpent"]
         },
         {
-          "question": "Quel sculpteur a réalisé « Le Penseur » ?",
-          "reponses": ["Auguste Rodin", "Camille Claudel", "Michel-Ange", "Auguste Bartholdi", "Donatello", "Alberto Giacometti", "Le Bernin", "Constantin Brancusi", "Aristide Maillol", "César"]
+          "question": "Lequel de ces algorithmes est un chiffrement symétrique ?",
+          "reponses": ["AES", "RSA", "SHA-256", "ECDSA", "Diffie-Hellman", "MD5", "DSA", "ElGamal", "SHA-3", "HMAC"]
+        },
+        {
+          "question": "Lequel de ces algorithmes est un chiffrement asymétrique ?",
+          "reponses": ["RSA", "AES", "SHA-1", "3DES", "ChaCha20", "MD5", "Blowfish", "RC4", "SHA-256", "HMAC"]
+        },
+        {
+          "question": "Quelle propriété distingue une fonction de hachage d'un chiffrement ?",
+          "reponses": ["elle est à sens unique, sans déchiffrement possible", "elle est plus rapide", "elle utilise une clé publique", "elle produit une sortie de taille variable", "elle est réversible avec la clé", "elle garantit la confidentialité", "elle compresse les données", "elle signe automatiquement", "elle nécessite un vecteur d'initialisation", "elle fonctionne uniquement sur du texte"]
+        },
+        {
+          "question": "Pourquoi ajoute-t-on un sel à un mot de passe avant hachage ?",
+          "reponses": ["pour empêcher l'usage de tables précalculées", "pour raccourcir l'empreinte", "pour accélérer la vérification", "pour chiffrer le mot de passe", "pour permettre de le retrouver", "pour respecter une norme d'encodage", "pour compresser la base", "pour éviter les collisions de noms d'utilisateur", "pour signer la session", "pour rendre le hachage réversible"]
+        },
+        {
+          "question": "Quel algorithme est recommandé aujourd'hui pour stocker des mots de passe ?",
+          "reponses": ["Argon2", "MD5", "SHA-1", "CRC32", "Base64", "ROT13", "DES", "RC4", "Adler-32", "XOR"]
+        },
+        {
+          "question": "Pourquoi MD5 est-il déconseillé pour la sécurité ?",
+          "reponses": ["des collisions y sont trouvées facilement", "il est trop lent", "il produit une sortie trop longue", "il nécessite une clé secrète", "il n'est pas standardisé", "il est propriétaire", "il ne fonctionne que sur 32 bits", "il consomme trop de mémoire", "il est réversible avec la clé publique", "il dépend du système d'exploitation"]
+        },
+        {
+          "question": "Que garantit une signature numérique ?",
+          "reponses": ["l'authenticité et l'intégrité du message", "uniquement la confidentialité", "la compression du message", "l'anonymat de l'expéditeur", "la disponibilité du service", "la rapidité de transmission", "l'effacement sécurisé", "la sauvegarde automatique", "le chiffrement du canal", "la redondance des données"]
+        },
+        {
+          "question": "Quel protocole sécurise aujourd'hui les échanges HTTP ?",
+          "reponses": ["TLS", "SSL 2.0", "WEP", "PPTP", "Telnet", "FTP", "SNMPv1", "NTLM", "WPS", "DES"]
+        },
+        {
+          "question": "Qu'est-ce qu'une attaque de l'homme du milieu ?",
+          "reponses": ["l'interception des échanges entre deux parties", "la saturation d'un serveur", "le vol d'un ordinateur portable", "l'injection de code dans une page", "le chiffrement des fichiers", "la devinette d'un mot de passe", "l'exploitation d'un dépassement de tampon", "l'usurpation d'une identité par téléphone", "l'analyse d'un binaire", "la corruption d'une sauvegarde"]
+        },
+        {
+          "question": "Qu'est-ce qu'une vulnérabilité zero-day ?",
+          "reponses": ["une faille exploitée avant l'existence d'un correctif", "une faille corrigée le jour même", "une faille sans impact", "une faille publiée depuis un an", "une faille interne à l'éditeur", "une faille d'un logiciel abandonné", "une faille théorique non exploitable", "une faille présente dès l'installation", "une faille de configuration", "une faille physique"]
+        },
+        {
+          "question": "Que fait un pare-feu ?",
+          "reponses": ["il filtre le trafic selon des règles", "il chiffre les disques", "il détecte les virus dans les fichiers", "il sauvegarde les données", "il gère les mots de passe", "il anonymise la navigation", "il met à jour les logiciels", "il supervise les performances", "il duplique les serveurs", "il génère des certificats"]
+        },
+        {
+          "question": "Quelle différence entre un IDS et un IPS ?",
+          "reponses": ["l'IDS détecte, l'IPS bloque", "l'IDS bloque, l'IPS détecte", "l'IDS chiffre, l'IPS déchiffre", "l'IDS est matériel, l'IPS logiciel", "l'IDS est interne, l'IPS externe", "aucune, ce sont des synonymes", "l'IDS filtre les ports, l'IPS les adresses", "l'IDS journalise, l'IPS supprime les journaux", "l'IDS agit en couche 2, l'IPS en couche 7", "l'IDS est payant, l'IPS gratuit"]
+        },
+        {
+          "question": "Qu'est-ce qu'une zone démilitarisée (DMZ) ?",
+          "reponses": ["un segment réseau exposé, isolé du réseau interne", "un réseau sans aucun pare-feu", "un VLAN réservé aux administrateurs", "un tunnel chiffré vers l'extérieur", "un serveur de sauvegarde hors ligne", "une plage d'adresses non routables", "un poste sans accès Internet", "un domaine sans authentification", "un sous-réseau de test", "un espace de stockage partagé"]
+        },
+        {
+          "question": "Qu'est-ce que le principe de non-répudiation ?",
+          "reponses": ["l'impossibilité de nier avoir effectué une action", "l'impossibilité de lire un message", "l'impossibilité de modifier un fichier", "l'impossibilité de se connecter deux fois", "l'impossibilité d'effacer un journal", "l'obligation de chiffrer", "la garantie de disponibilité", "la séparation des environnements", "la rotation des clés", "l'anonymat de l'utilisateur"]
+        },
+        {
+          "question": "Que désigne l'ingénierie sociale ?",
+          "reponses": ["la manipulation d'une personne pour obtenir un accès", "l'analyse du code source", "l'étude des réseaux sociaux d'une entreprise", "la conception d'architectures sécurisées", "le test automatisé de mots de passe", "l'audit de configuration", "la cartographie du réseau", "la rétro-ingénierie d'un binaire", "la surveillance des employés", "la classification des données"]
+        },
+        {
+          "question": "Qu'est-ce qu'un test d'intrusion ?",
+          "reponses": ["une attaque simulée et autorisée pour évaluer la sécurité", "une attaque réelle non annoncée", "un scan antivirus complet", "une sauvegarde de sécurité", "un audit comptable", "une formation des utilisateurs", "un chiffrement de bout en bout", "une mise à jour de sécurité", "une analyse de journaux", "un plan de reprise d'activité"]
+        },
+        {
+          "question": "Que classe l'OWASP dans son Top 10 ?",
+          "reponses": ["les risques de sécurité applicatifs web les plus critiques", "les dix virus les plus répandus", "les meilleurs antivirus", "les dix pays les plus attaqués", "les protocoles réseau obsolètes", "les dix mots de passe les plus utilisés", "les certifications reconnues", "les systèmes d'exploitation les plus sûrs", "les failles matérielles connues", "les outils de test d'intrusion"]
+        },
+        {
+          "question": "À quoi sert un identifiant CVE ?",
+          "reponses": ["à référencer une vulnérabilité publiquement connue", "à noter la gravité d'une attaque", "à identifier un attaquant", "à certifier un produit de sécurité", "à chiffrer une communication", "à authentifier un serveur", "à classer les antivirus", "à numéroter les correctifs d'un éditeur", "à tracer un incident interne", "à identifier un poste de travail"]
+        },
+        {
+          "question": "Que mesure le score CVSS ?",
+          "reponses": ["la gravité d'une vulnérabilité", "le coût d'une attaque", "le nombre de machines touchées", "la vitesse de propagation d'un virus", "la qualité d'un mot de passe", "la robustesse d'un chiffrement", "le temps de réponse d'un pare-feu", "la conformité à une norme", "le niveau de formation des équipes", "la disponibilité d'un service"]
+        },
+        {
+          "question": "Qu'est-ce qu'un VPN ?",
+          "reponses": ["un tunnel chiffré à travers un réseau non sûr", "un antivirus en ligne", "un serveur mandataire sans chiffrement", "un pare-feu applicatif", "un gestionnaire de mots de passe", "un service d'anonymat absolu", "un protocole de routage", "un système de sauvegarde", "un réseau physique dédié", "un scanner de vulnérabilités"]
+        },
+        {
+          "question": "Qu'est-ce qu'une porte dérobée (backdoor) ?",
+          "reponses": ["un accès caché contournant l'authentification", "un correctif de sécurité non documenté", "un compte invité standard", "une faille corrigée automatiquement", "un port ouvert par le pare-feu", "une connexion VPN de secours", "un journal d'audit masqué", "un mot de passe expiré", "une sauvegarde chiffrée", "un protocole de secours"]
+        },
+        {
+          "question": "Qu'est-ce qu'un cheval de Troie ?",
+          "reponses": ["un programme d'apparence légitime cachant une fonction malveillante", "un virus qui se réplique seul", "un ver réseau autonome", "un logiciel publicitaire", "un enregistreur de frappe matériel", "un rootkit de niveau noyau", "une bombe logique temporisée", "un script de minage", "un robot de spam", "un faux antivirus uniquement"]
+        },
+        {
+          "question": "Qu'est-ce qu'un ver informatique ?",
+          "reponses": ["un programme qui se propage seul sur le réseau", "un programme caché dans un logiciel légitime", "un code qui chiffre les données", "un enregistreur de frappe", "une faille de configuration", "un outil d'administration détourné", "un script de test", "un fichier journal corrompu", "une extension de navigateur", "un pilote non signé"]
+        },
+        {
+          "question": "Que fait un rootkit ?",
+          "reponses": ["il dissimule sa présence en s'intégrant au système", "il chiffre les partitions", "il sature la mémoire vive", "il redirige les requêtes DNS uniquement", "il affiche des publicités", "il duplique les fichiers système", "il désactive le réseau", "il ralentit volontairement le processeur", "il supprime les sauvegardes", "il change le fond d'écran"]
+        },
+        {
+          "question": "Qu'est-ce qu'une attaque par force brute ?",
+          "reponses": ["l'essai systématique de combinaisons jusqu'à trouver la bonne", "l'exploitation d'une faille logicielle", "l'interception du trafic", "l'usurpation d'une adresse IP", "l'envoi massif de courriels", "la destruction physique d'un serveur", "l'injection de code", "le vol d'un certificat", "l'analyse statistique d'un chiffrement", "le détournement d'une session active"]
+        },
+        {
+          "question": "Qu'est-ce qu'une attaque par dictionnaire ?",
+          "reponses": ["l'essai d'une liste de mots de passe probables", "la lecture d'un dictionnaire de données", "l'analyse du code source", "la traduction automatique d'un message chiffré", "l'énumération des utilisateurs d'un domaine", "la recherche de fichiers sensibles", "la cartographie d'un réseau", "l'extraction d'une base de données", "l'écoute passive du réseau", "la falsification d'un jeton"]
+        },
+        {
+          "question": "Que recommande-t-on pour la politique de mots de passe ?",
+          "reponses": ["des phrases de passe longues et uniques", "un changement obligatoire chaque semaine", "exactement huit caractères", "un mot de passe partagé par équipe", "l'interdiction des caractères spéciaux", "le même mot de passe partout", "un mot de passe écrit sur un post-it sécurisé", "l'usage du nom de l'entreprise", "des mots de passe de quatre chiffres", "un renouvellement à chaque connexion"]
+        },
+        {
+          "question": "À quoi sert un gestionnaire de mots de passe ?",
+          "reponses": ["à générer et stocker des identifiants uniques et forts", "à supprimer les mots de passe faibles du réseau", "à partager un mot de passe unique", "à chiffrer le disque dur", "à surveiller les connexions", "à bloquer les tentatives d'intrusion", "à auditer les droits des comptes", "à réinitialiser les sessions", "à anonymiser la navigation", "à sauvegarder les fichiers"]
+        },
+        {
+          "question": "Qu'est-ce que le principe du Zero Trust ?",
+          "reponses": ["ne faire confiance à aucun accès sans vérification, même interne", "refuser tout accès extérieur", "chiffrer l'intégralité du trafic interne", "supprimer les comptes administrateurs", "isoler physiquement le réseau", "n'accorder aucun droit aux utilisateurs", "auditer une fois par an", "utiliser uniquement des logiciels libres", "interdire le télétravail", "n'autoriser qu'une seule session par compte"]
+        },
+        {
+          "question": "Que désigne le RGPD ?",
+          "reponses": ["le règlement européen sur la protection des données personnelles", "une norme de chiffrement", "un protocole d'authentification", "un référentiel de tests d'intrusion", "une certification d'entreprise", "un organisme de veille sur les failles", "un algorithme de hachage", "une architecture réseau sécurisée", "un plan de continuité d'activité", "un label antivirus"]
+        },
+        {
+          "question": "Quelle règle de sauvegarde résume le 3-2-1 ?",
+          "reponses": ["3 copies, 2 supports différents, 1 hors site", "3 sauvegardes par jour, 2 serveurs, 1 administrateur", "3 mois de rétention, 2 formats, 1 chiffrement", "3 utilisateurs, 2 validations, 1 restauration", "3 disques, 2 bandes, 1 cloud obligatoire", "3 tests par an, 2 audits, 1 certification", "3 pare-feux, 2 DMZ, 1 VPN", "3 mots de passe, 2 facteurs, 1 compte", "3 sites, 2 réseaux, 1 fournisseur", "3 clés, 2 coffres, 1 responsable"]
+        },
+        {
+          "question": "Qu'est-ce qu'un SIEM ?",
+          "reponses": ["un système de collecte et de corrélation des journaux de sécurité", "un pare-feu applicatif", "un antivirus centralisé", "un gestionnaire d'identités", "un scanner de vulnérabilités", "un outil de chiffrement de disque", "un serveur d'authentification", "un proxy filtrant", "un système de sauvegarde", "un générateur de certificats"]
+        },
+        {
+          "question": "À quoi sert une autorité de certification ?",
+          "reponses": ["à signer et garantir l'authenticité des certificats", "à chiffrer le trafic réseau", "à stocker les mots de passe", "à détecter les intrusions", "à distribuer les adresses IP", "à auditer le code source", "à héberger les clés privées des clients", "à filtrer les courriels", "à certifier les compétences des employés", "à valider les sauvegardes"]
+        },
+        {
+          "question": "Que se passe-t-il si un certificat TLS est expiré ?",
+          "reponses": ["le navigateur avertit l'utilisateur et bloque par défaut", "la connexion reste parfaitement sûre", "le site passe automatiquement en HTTP", "le certificat se renouvelle tout seul", "le trafic n'est plus chiffré du tout", "le serveur refuse toute connexion sortante", "l'autorité de certification est prévenue automatiquement", "les cookies sont supprimés", "le domaine est suspendu", "aucune différence n'est visible"]
+        },
+        {
+          "question": "Qu'est-ce que le chiffrement de bout en bout ?",
+          "reponses": ["seuls les correspondants peuvent déchiffrer le message", "le serveur déchiffre puis rechiffre", "le message est chiffré deux fois", "seul l'expéditeur peut déchiffrer", "le chiffrement est appliqué au stockage", "le canal est chiffré mais pas le contenu", "les métadonnées seules sont protégées", "le message est signé mais pas chiffré", "chaque routeur possède la clé", "le chiffrement change à chaque saut"]
+        },
+        {
+          "question": "Qu'est-ce qu'un honeypot ?",
+          "reponses": ["un leurre destiné à attirer et observer les attaquants", "un coffre-fort de mots de passe", "un serveur de sauvegarde caché", "un antivirus comportemental", "un pare-feu de dernière génération", "un réseau isolé pour les invités", "un journal d'audit chiffré", "un compte administrateur de secours", "un tunnel VPN de test", "un scanner de ports interne"]
+        },
+        {
+          "question": "Que signifie l'acronyme MFA ?",
+          "reponses": ["Multi-Factor Authentication", "Managed Firewall Access", "Multi-Function Antivirus", "Mandatory File Audit", "Main Frame Access", "Malware Forensic Analysis", "Mutual Flow Authorization", "Master Fingerprint Authentication", "Message Format Authority", "Managed Failover Architecture"]
+        },
+        {
+          "question": "Pourquoi faut-il appliquer les correctifs de sécurité rapidement ?",
+          "reponses": ["les failles publiées sont exploitées très vite", "cela améliore les performances", "cela réduit la taille des logiciels", "c'est exigé par le fournisseur d'accès", "cela renouvelle les certificats", "cela libère de l'espace disque", "cela accélère le réseau", "cela réinitialise les mots de passe", "cela efface les journaux", "cela désactive les comptes inutilisés"]
+        },
+        {
+          "question": "Qu'est-ce que l'élévation de privilèges ?",
+          "reponses": ["l'obtention de droits supérieurs à ceux accordés", "la création d'un nouveau compte", "le partage d'un mot de passe administrateur", "la connexion depuis un autre poste", "l'ajout d'un utilisateur à un groupe par l'admin", "le changement de mot de passe", "la réinitialisation d'une session", "l'activation du chiffrement", "l'ouverture d'un port réseau", "la suppression d'un journal"]
         }
       ]
     },
     {
-      "categorie": "Sport",
+      "categorie": "FastAPI",
       "questions": [
         {
-          "question": "Combien de joueurs composent une équipe de football sur le terrain ?",
-          "reponses": ["11", "10", "9", "12", "7", "6", "15", "8", "13", "5"]
+          "question": "Sur quelle bibliothèque de validation FastAPI s'appuie-t-il ?",
+          "reponses": ["Pydantic", "Marshmallow", "Cerberus", "Voluptuous", "Colander", "Schematics", "attrs", "jsonschema", "Trafaret", "Django REST serializers"]
         },
         {
-          "question": "Quelle ville a accueilli les Jeux olympiques d'été de 2024 ?",
-          "reponses": ["Paris", "Los Angeles", "Tokyo", "Londres", "Rome", "Madrid", "Berlin", "Pékin", "Sydney", "Rio de Janeiro"]
+          "question": "Sur quel framework ASGI FastAPI est-il construit ?",
+          "reponses": ["Starlette", "Flask", "Django", "Tornado", "Sanic", "Falcon", "Bottle", "Quart", "Pyramid", "CherryPy"]
         },
         {
-          "question": "Quel pays a remporté la Coupe du monde de football 2018 ?",
-          "reponses": ["La France", "La Croatie", "L'Allemagne", "Le Brésil", "L'Argentine", "L'Espagne", "La Belgique", "L'Angleterre", "L'Italie", "Le Portugal"]
+          "question": "Quelle norme d'interface serveur FastAPI utilise-t-il ?",
+          "reponses": ["ASGI", "WSGI", "CGI", "FastCGI", "SCGI", "uWSGI", "JSGI", "Rack", "Servlet", "ISAPI"]
         },
         {
-          "question": "Combien de temps dure un match de rugby à XV, hors prolongations ?",
-          "reponses": ["80 minutes", "90 minutes", "60 minutes", "70 minutes", "100 minutes", "40 minutes", "120 minutes", "85 minutes", "75 minutes", "50 minutes"]
+          "question": "Quel serveur est le plus couramment utilisé pour lancer FastAPI ?",
+          "reponses": ["Uvicorn", "Gunicorn seul", "Apache", "Nginx seul", "Waitress", "mod_wsgi", "Tomcat", "IIS", "Passenger", "Twisted seul"]
         },
         {
-          "question": "Quel tournoi du Grand Chelem se joue sur terre battue à Paris ?",
-          "reponses": ["Roland-Garros", "Wimbledon", "L'US Open", "L'Open d'Australie", "Le Masters de Monte-Carlo", "La Coupe Davis", "Indian Wells", "Le tournoi du Queen's", "Le Masters de Miami", "L'Open de Madrid"]
+          "question": "Quel décorateur déclare une route en lecture ?",
+          "reponses": ["@app.get", "@app.route", "@app.read", "@app.fetch", "@get", "@app.http", "@route.get", "@app.endpoint", "@app.view", "@app.query"]
         },
         {
-          "question": "Combien d'anneaux figurent sur le drapeau olympique ?",
-          "reponses": ["5", "4", "6", "7", "3", "8", "10", "9", "2", "12"]
+          "question": "Quelle documentation interactive FastAPI génère-t-il sur /docs ?",
+          "reponses": ["Swagger UI", "ReDoc", "GraphiQL", "Postman", "Sphinx", "MkDocs", "Slate", "RapiDoc", "Stoplight", "Insomnia"]
         },
         {
-          "question": "Quel sport pratique Teddy Riner ?",
-          "reponses": ["Le judo", "Le karaté", "La lutte", "La boxe", "Le rugby", "Le taekwondo", "Le sumo", "L'escrime", "L'haltérophilie", "L'aïkido"]
+          "question": "Quelle autre documentation est servie sur /redoc ?",
+          "reponses": ["ReDoc", "Swagger UI", "GraphiQL", "Scalar", "Sphinx", "Docusaurus", "Slate", "RapiDoc", "Stoplight", "Postman"]
         },
         {
-          "question": "Dans quel sport utilise-t-on un volant ?",
-          "reponses": ["Le badminton", "Le tennis", "Le squash", "Le tennis de table", "Le padel", "Le cricket", "Le hockey", "Le golf", "Le baseball", "Le volley-ball"]
+          "question": "Sur quel chemin FastAPI expose-t-il le schéma OpenAPI par défaut ?",
+          "reponses": ["/openapi.json", "/schema.json", "/api.json", "/docs.json", "/swagger.json", "/spec.json", "/openapi.yaml", "/api/schema", "/openapi", "/definition.json"]
         },
         {
-          "question": "Quelle course cycliste se termine traditionnellement sur les Champs-Élysées ?",
-          "reponses": ["Le Tour de France", "Le Tour d'Italie", "Le Tour d'Espagne", "Paris-Roubaix", "Milan-San Remo", "Le Tour des Flandres", "Liège-Bastogne-Liège", "Paris-Nice", "Le Critérium du Dauphiné", "Le Tour de Suisse"]
+          "question": "Comment déclare-t-on un paramètre de chemin ?",
+          "reponses": ["@app.get(\"/items/{item_id}\")", "@app.get(\"/items/:item_id\")", "@app.get(\"/items/<item_id>\")", "@app.get(\"/items/[item_id]\")", "@app.get(\"/items/$item_id\")", "@app.get(\"/items/(item_id)\")", "@app.get(\"/items/%item_id\")", "@app.get(\"/items/@item_id\")", "@app.get(\"/items/#item_id\")", "@app.get(\"/items/*item_id\")"]
         },
         {
-          "question": "Quel athlète détient le record du monde masculin du 100 mètres ?",
-          "reponses": ["Usain Bolt", "Carl Lewis", "Tyson Gay", "Yohan Blake", "Asafa Powell", "Justin Gatlin", "Maurice Greene", "Christophe Lemaitre", "Noah Lyles", "Ben Johnson"]
+          "question": "Comment FastAPI distingue-t-il un paramètre de requête d'un paramètre de chemin ?",
+          "reponses": ["tout paramètre absent du chemin devient un paramètre de requête", "il faut le décorer avec @query", "il faut le préfixer par q_", "il faut le déclarer dans une liste query_params", "il faut utiliser le type QueryParam", "il faut l'annoter en str obligatoirement", "il faut passer par request.query", "il faut le déclarer en second", "il faut l'enregistrer dans la configuration", "il n'y a pas de distinction"]
         },
         {
-          "question": "Combien de trous compte un parcours de golf standard ?",
-          "reponses": ["18", "9", "12", "16", "20", "24", "10", "14", "21", "36"]
+          "question": "Comment rend-on un paramètre de requête optionnel ?",
+          "reponses": ["en lui donnant une valeur par défaut", "en l'annotant Optional sans défaut", "en le décorant avec @optional", "en le plaçant en dernier", "en utilisant le type Maybe", "en l'entourant de crochets dans le chemin", "en déclarant required=False dans le décorateur", "en le mettant dans une liste optionnelle", "en le préfixant par un underscore", "ce n'est pas possible"]
         },
         {
-          "question": "Quel club de football est surnommé « les Gones » ?",
-          "reponses": ["L'Olympique lyonnais", "L'Olympique de Marseille", "Le Paris Saint-Germain", "L'AS Saint-Étienne", "Les Girondins de Bordeaux", "Le LOSC Lille", "Le RC Lens", "Le FC Nantes", "Le Stade rennais", "L'AS Monaco"]
+          "question": "Que devient une classe Pydantic déclarée comme paramètre de fonction ?",
+          "reponses": ["le corps de la requête", "un paramètre de requête", "un en-tête", "un cookie", "un paramètre de chemin", "une dépendance automatique", "une réponse", "un modèle de base de données", "un middleware", "un fichier téléversé"]
+        },
+        {
+          "question": "Quel paramètre du décorateur fixe le code HTTP de succès ?",
+          "reponses": ["status_code", "http_status", "code", "response_code", "status", "success_code", "return_code", "http_code", "result_code", "ok_code"]
+        },
+        {
+          "question": "Quel code HTTP FastAPI renvoie-t-il par défaut sur un GET réussi ?",
+          "reponses": ["200", "201", "204", "202", "302", "301", "100", "206", "304", "418"]
+        },
+        {
+          "question": "Quel code renvoie FastAPI quand la validation du corps échoue ?",
+          "reponses": ["422", "400", "409", "500", "406", "415", "404", "403", "428", "412"]
+        },
+        {
+          "question": "Quel paramètre du décorateur déclare le modèle de la réponse ?",
+          "reponses": ["response_model", "return_model", "output_model", "schema", "model", "response_schema", "serializer", "result_model", "out", "response_type"]
+        },
+        {
+          "question": "À quoi sert response_model ?",
+          "reponses": ["à valider et filtrer les données renvoyées", "à valider le corps de la requête", "à générer la base de données", "à définir les en-têtes de réponse", "à choisir le format de sérialisation", "à mettre la réponse en cache", "à compresser la réponse", "à journaliser la réponse", "à limiter le débit", "à signer la réponse"]
+        },
+        {
+          "question": "Quelle fonction déclare une dépendance ?",
+          "reponses": ["Depends()", "Inject()", "Require()", "Provide()", "Use()", "Need()", "Resolve()", "Bind()", "Import()", "Service()"]
+        },
+        {
+          "question": "Que permet le système de dépendances de FastAPI ?",
+          "reponses": ["factoriser et injecter de la logique partagée dans les routes", "installer des paquets Python", "gérer les migrations de base", "compiler les modèles Pydantic", "charger les fichiers statiques", "générer la documentation", "mettre en cache les réponses", "paralléliser les requêtes", "valider les en-têtes uniquement", "démarrer le serveur"]
+        },
+        {
+          "question": "Comment déclare-t-on une route asynchrone ?",
+          "reponses": ["async def", "def async", "@async", "await def", "coroutine def", "def ... -> async", "@app.async_get", "async function", "defer def", "task def"]
+        },
+        {
+          "question": "Que fait FastAPI d'une route déclarée avec def et non async def ?",
+          "reponses": ["il l'exécute dans un pool de threads", "il refuse de démarrer", "il la convertit automatiquement en coroutine", "il la bloque sur la boucle d'événements", "il l'exécute dans un autre processus", "il émet une erreur au premier appel", "il la met en file d'attente", "il la transforme en tâche de fond", "il l'ignore silencieusement", "il la sérialise"]
+        },
+        {
+          "question": "Quelle classe lève une erreur HTTP explicite ?",
+          "reponses": ["HTTPException", "HttpError", "APIException", "ResponseError", "RequestException", "StatusException", "WebException", "FastAPIError", "RouteException", "ServerError"]
+        },
+        {
+          "question": "Quel objet permet de grouper des routes dans un fichier séparé ?",
+          "reponses": ["APIRouter", "Blueprint", "RouteGroup", "SubApp", "Namespace", "Module", "Controller", "RouterGroup", "Include", "Mount"]
+        },
+        {
+          "question": "Quelle méthode rattache un routeur à l'application ?",
+          "reponses": ["app.include_router()", "app.add_router()", "app.register()", "app.mount_router()", "app.use()", "app.attach()", "app.router()", "app.link()", "app.bind()", "app.load()"]
+        },
+        {
+          "question": "Quel paramètre d'APIRouter ajoute un préfixe commun aux chemins ?",
+          "reponses": ["prefix", "base_path", "root", "mount", "path", "namespace", "url_prefix", "base", "scope", "route_prefix"]
+        },
+        {
+          "question": "À quoi servent les tags sur une route ?",
+          "reponses": ["à regrouper les routes dans la documentation", "à filtrer les requêtes", "à définir les permissions", "à versionner l'API", "à activer le cache", "à choisir le serveur", "à limiter le débit", "à nommer les paramètres", "à définir l'ordre d'exécution", "à sélectionner la base de données"]
+        },
+        {
+          "question": "Quel mécanisme remplace on_event pour le démarrage et l'arrêt ?",
+          "reponses": ["le gestionnaire lifespan", "les middlewares", "les dépendances globales", "les signaux", "les hooks de routeur", "les tâches de fond", "les événements ASGI bruts", "les décorateurs @startup", "les callbacks OpenAPI", "les gestionnaires d'exception"]
+        },
+        {
+          "question": "Quelle classe permet d'exécuter du travail après la réponse ?",
+          "reponses": ["BackgroundTasks", "AfterResponse", "DeferredTasks", "AsyncQueue", "PostProcess", "TaskRunner", "Celery", "Worker", "JobQueue", "Scheduler"]
+        },
+        {
+          "question": "Quel middleware gère les requêtes d'origines croisées ?",
+          "reponses": ["CORSMiddleware", "CrossOriginMiddleware", "OriginMiddleware", "HTTPSRedirectMiddleware", "TrustedHostMiddleware", "GZipMiddleware", "SessionMiddleware", "AuthMiddleware", "SecurityMiddleware", "ProxyMiddleware"]
+        },
+        {
+          "question": "Quel paramètre de CORSMiddleware liste les origines autorisées ?",
+          "reponses": ["allow_origins", "origins", "allowed_hosts", "cors_origins", "accept_origins", "allow_hosts", "domains", "whitelist", "sources", "referers"]
+        },
+        {
+          "question": "Comment déclare-t-on un paramètre lu dans un en-tête HTTP ?",
+          "reponses": ["Header()", "Headers()", "RequestHeader()", "HttpHeader()", "Meta()", "FromHeader()", "HeaderParam()", "Head()", "Metadata()", "Context()"]
+        },
+        {
+          "question": "Comment déclare-t-on un paramètre lu dans un cookie ?",
+          "reponses": ["Cookie()", "Cookies()", "FromCookie()", "CookieParam()", "Session()", "Jar()", "Crumb()", "Token()", "Store()", "Client()"]
+        },
+        {
+          "question": "Comment reçoit-on un fichier téléversé ?",
+          "reponses": ["UploadFile", "FileUpload", "RequestFile", "MultipartFile", "FormFile", "BinaryFile", "StreamFile", "Attachment", "Blob", "FileField"]
+        },
+        {
+          "question": "Quelle classe déclare un champ de formulaire ?",
+          "reponses": ["Form()", "Field()", "FormData()", "Input()", "Post()", "Body(form=True)", "Multipart()", "FormField()", "Entry()", "Param()"]
+        },
+        {
+          "question": "Quel paquet faut-il installer pour gérer les formulaires et fichiers ?",
+          "reponses": ["python-multipart", "multipart", "fastapi-forms", "starlette-forms", "python-forms", "werkzeug", "form-data", "uploadlib", "filehandler", "mimeparse"]
+        },
+        {
+          "question": "Comment renvoyer une redirection ?",
+          "reponses": ["RedirectResponse", "Redirect()", "HTTPRedirect", "MoveResponse", "LocationResponse", "ForwardResponse", "Response(redirect=True)", "GoTo()", "SendTo()", "Route()"]
+        },
+        {
+          "question": "Quelle réponse renvoie du contenu HTML brut ?",
+          "reponses": ["HTMLResponse", "TextResponse", "PlainResponse", "TemplateResponse", "RawResponse", "PageResponse", "MarkupResponse", "DocumentResponse", "ViewResponse", "RenderResponse"]
+        },
+        {
+          "question": "Quelle réponse diffuse un contenu par morceaux ?",
+          "reponses": ["StreamingResponse", "ChunkedResponse", "FlowResponse", "PipeResponse", "LiveResponse", "PartialResponse", "BufferResponse", "AsyncResponse", "IterResponse", "FeedResponse"]
+        },
+        {
+          "question": "Comment servir des fichiers statiques ?",
+          "reponses": ["app.mount() avec StaticFiles", "app.static()", "app.serve_static()", "app.add_static()", "app.include_static()", "StaticRouter()", "app.use(static)", "app.files()", "app.public()", "app.assets()"]
+        },
+        {
+          "question": "Quel schéma de sécurité intégré gère les jetons Bearer ?",
+          "reponses": ["OAuth2PasswordBearer", "BearerAuth", "TokenAuth", "JWTBearer", "HTTPBearerToken", "AuthBearer", "OAuthToken", "SecurityBearer", "BasicBearer", "APIKeyBearer"]
+        },
+        {
+          "question": "Comment déclare-t-on une dépendance qui ne renvoie rien mais doit s'exécuter ?",
+          "reponses": ["avec le paramètre dependencies du décorateur", "avec @app.before_request", "avec un middleware obligatoire", "avec Depends() sans annotation", "avec un décorateur @require", "avec on_event('request')", "avec un hook de routeur", "avec une tâche de fond", "avec un gestionnaire d'exception", "ce n'est pas possible"]
+        },
+        {
+          "question": "Que fait yield dans une dépendance ?",
+          "reponses": ["il permet d'exécuter du code de nettoyage après la réponse", "il rend la dépendance asynchrone", "il met la requête en pause", "il renvoie plusieurs réponses", "il active le streaming", "il crée une tâche de fond", "il met le résultat en cache", "il déclare une sous-dépendance", "il rend la dépendance optionnelle", "il provoque une erreur"]
+        },
+        {
+          "question": "Comment annote-t-on une dépendance avec la syntaxe moderne recommandée ?",
+          "reponses": ["Annotated[Session, Depends(get_session)]", "Session = Depends(get_session)", "Depends[Session]", "Inject[Session]", "Session | Depends", "Provide[Session]", "Depends(Session)", "Requires[Session]", "Session @ Depends", "Use[Session]"]
+        },
+        {
+          "question": "Quelle contrainte Pydantic impose une longueur minimale à une chaîne ?",
+          "reponses": ["min_length", "minimum_length", "min_len", "length_min", "min_size", "at_least", "size_min", "minLength", "min_chars", "lower_bound"]
+        },
+        {
+          "question": "Quelle contrainte impose une valeur supérieure ou égale ?",
+          "reponses": ["ge", "gte", "min", "greater", "at_least", "above", "minimum", "from", "low", "start"]
+        },
+        {
+          "question": "Quelle méthode Pydantic v2 sérialise un modèle en dictionnaire ?",
+          "reponses": ["model_dump()", "dict()", "to_dict()", "serialize()", "as_dict()", "json_dump()", "export()", "asdict()", "dump()", "to_python()"]
+        },
+        {
+          "question": "Quelle option de configuration Pydantic lit les attributs d'un objet ORM ?",
+          "reponses": ["from_attributes", "orm_mode", "allow_orm", "read_attributes", "attribute_mode", "from_orm_objects", "auto_attributes", "load_attributes", "map_attributes", "use_attributes"]
+        },
+        {
+          "question": "Quelle bibliothèque lit la configuration depuis les variables d'environnement ?",
+          "reponses": ["pydantic-settings", "python-dotenv seul", "environs", "dynaconf", "configparser", "fastapi-config", "envparse", "decouple", "settings-toolkit", "os-settings"]
+        },
+        {
+          "question": "Quel outil officiel permet de tester une application FastAPI ?",
+          "reponses": ["TestClient de Starlette", "pytest-fastapi", "fastapi-test", "unittest.HTTPCase", "requests-mock", "httpx seul", "asgi-tester", "webtest", "fastapi.testing", "starlette-mock"]
+        },
+        {
+          "question": "Quel paquet est nécessaire au TestClient pour fonctionner ?",
+          "reponses": ["httpx", "requests", "aiohttp", "urllib3", "websockets", "anyio-http", "starlette-client", "pytest-asyncio", "trio", "curl-cffi"]
         }
       ]
     }

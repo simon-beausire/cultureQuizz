@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Inter:wght@400;500&display=swap");
 
 :root {
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
   color-scheme: dark;
 }
 
 body {
   margin: 0;
-  min-height: 100svh;
-  background: #1a1740;
+  background: #14122e;
   color: #f5f3ff;
 }

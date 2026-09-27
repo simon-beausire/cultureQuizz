@@ -9,15 +9,13 @@ from sqlalchemy.exc import OperationalError
 from .config import settings
 from .database import SessionLocal, engine
 from .models import Base
-from .routers import categories
+from .routers import categories, reponses
 from .seed import seed
 
 logger = logging.getLogger("uvicorn")
 
 
 def wait_for_database(attempts: int = 30, delay: float = 2.0) -> None:
-    """Docker attend déjà le healthcheck de MySQL, mais MySQL peut encore refuser
-    les toutes premières connexions pendant qu'il finit de démarrer."""
     for attempt in range(1, attempts + 1):
         try:
             with engine.connect():
@@ -31,8 +29,6 @@ def wait_for_database(attempts: int = 30, delay: float = 2.0) -> None:
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Exécuté une fois au démarrage : crée les tables, puis les remplit si elles sont vides.
-    # Remplace le `php artisan migrate --seed` de Laravel.
     wait_for_database()
     Base.metadata.create_all(engine)
 
@@ -49,7 +45,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(
     title="Culture Quizz API",
-    description="API du quiz de culture générale.",
+    description="API du quiz technique : Python, réseau, Tailwind, cybersécurité, FastAPI.",
     version="1.0.0",
     lifespan=lifespan,
 )
@@ -57,11 +53,12 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.cors_origins,
-    allow_methods=["GET"],
+    allow_methods=["GET", "POST"],
     allow_headers=["*"],
 )
 
 app.include_router(categories.router)
+app.include_router(reponses.router)
 
 
 @app.get("/api/health", tags=["health"], summary="Vérifier que l'API répond")
